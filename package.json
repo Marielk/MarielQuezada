@@ -1,0 +1,32 @@
+{
+  "name": "marielquezada",
+  "version": "1.0.0",
+  "description": "Portafolio from Laboratoria's Bootcamp, Santiago de Chile 2018, Front-end ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marielk/MarielQuezada.git"
+  },
+  "keywords": [
+    "portafolio",
+    "front",
+    "end",
+    "developer",
+    "html",
+    "css",
+    "angular",
+    "typescript",
+    "woman",
+    "creativity",
+    "art"
+  ],
+  "author": "Mariel Quezada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marielk/MarielQuezada/issues"
+  },
+  "homepage": "https://github.com/Marielk/MarielQuezada#readme"
+}
