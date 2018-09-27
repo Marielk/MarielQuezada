@@ -14,20 +14,21 @@ const app_routes: Routes=[
     path: '', component: WelcomeComponent
   },
   {
-    path: 'portafolio', component: PortafolioComponent
+    path: 'welcome/portafolio', component: PortafolioComponent
   },
   {
-    path: 'service', component: ServiceComponent
+    path: 'welcome/service', component: ServiceComponent
   },
   {
-    path: 'references', component: ReferencesComponent
+    path: 'welcome/references', component: ReferencesComponent
   },
   {
-    path: 'aboutme', component: AboutmeComponent
+    path: 'welcome/aboutme', component: AboutmeComponent
   },
   {
-    path: 'contact', component: ContactComponent
+    path: 'welcome/contact', component: ContactComponent
   },
+  
   {
     path: '**', pathMatch: 'full', redirectTo: ''
   }

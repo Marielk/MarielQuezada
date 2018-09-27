@@ -11,5 +11,8 @@ export class TopMenuComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  active(){
+    var hamburger = document.querySelector(".hamburger--collapse");
+    hamburger.classList.toggle("is-active");
+  }
 }
