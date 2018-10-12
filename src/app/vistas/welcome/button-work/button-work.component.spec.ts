@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtonProfileComponent } from './button-profile.component';
+import { ButtonWorkComponent } from './button-work.component';
 
-describe('ButtonProfileComponent', () => {
-  let component: ButtonProfileComponent;
-  let fixture: ComponentFixture<ButtonProfileComponent>;
+describe('ButtonWorkComponent', () => {
+  let component: ButtonWorkComponent;
+  let fixture: ComponentFixture<ButtonWorkComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ButtonProfileComponent ]
+      declarations: [ ButtonWorkComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ButtonProfileComponent);
+    fixture = TestBed.createComponent(ButtonWorkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

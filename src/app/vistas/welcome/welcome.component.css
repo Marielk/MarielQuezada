@@ -1,0 +1,118 @@
+.main{
+  background-color: #020299;
+  /* height: 1000px; */
+  display: inline-flex;
+  color: #ffffff;
+}
+
+.imgMain{
+  height: 70%;
+  margin-left: 50%;
+  margin-top: 5%;
+  
+
+}
+.title{
+  
+  margin-top: 8%;
+  margin-left: 5%;
+  font-size: -webkit-xxx-large;
+  font-family: 'PT Serif', serif;
+}
+.subtitle{
+
+  margin-top: -2%;
+    margin-left: 35%;
+  font-size: larger;
+  font-family: 'ABeeZee', sans-serif;
+}
+.text{
+  margin-top: 5%;
+    width: 70%;
+  margin-left: 5%;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.buttonWork{
+
+  margin-left: 25%;
+  margin-top: 35%;
+}
+
+@media only screen and (max-width: 765px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+  }
+
+
+  .imgMain{
+    height: 70%;
+    margin-left: 0%;
+    margin-top: 5%;
+    /* transform: translateY(-100%); */
+
+  }
+  .title{
+    
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    /* transform: translateY(550px); */
+  }
+  .subtitle{
+
+    margin-top: -2%;
+      /* margin-left: 30%;
+    font-size: larger; */
+    margin-left: 20%;
+    font-size: medium;
+    font-family: 'ABeeZee', sans-serif;
+    /* transform: translateY(560px); */
+  }
+  .text{
+    margin-top: 5%;
+    width: 95%;
+    margin-left: 5%;
+    font-family: 'ABeeZee', sans-serif;
+    /* transform: translateY(580px); */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+	.imgMain{
+    margin-top: 15%;
+    /* height: 70%;
+    margin-left: 0%;
+    transform: translateY(-100%); */
+
+  }
+  .title{
+    
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: xx-large;
+    font-family: 'PT Serif', serif;
+ 
+  }
+  .subtitle{
+
+    margin-top: -2%;
+    margin-left: 20%;
+    font-size: medium;
+    font-family: 'ABeeZee', sans-serif;
+    
+  }
+  .text{
+    margin-top: 15%;
+    /* width: 70%; */
+    text-align: justify;
+    margin-left: 5%;
+    padding: 2%;
+    padding-right: 10%;
+    font-family: 'ABeeZee', sans-serif;
+    
+  }
+}
