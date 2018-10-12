@@ -20,6 +20,7 @@ import { ButtonWorkComponent } from './vistas/welcome/button-work/button-work.co
 // modulos y servicios
 import { AppRoutingModule } from './app-routing.module';
 import {APP_BASE_HREF} from '@angular/common';
+import { ResponsiveMenuComponent } from './vistas/top-menu/responsive-menu/responsive-menu.component';
 
 // librerias
 
@@ -36,7 +37,8 @@ import {APP_BASE_HREF} from '@angular/common';
     MsgButtonComponent,
     FooterComponent,
     TopMenuComponent,
-    ButtonWorkComponent
+    ButtonWorkComponent,
+    ResponsiveMenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,43 +1,44 @@
-.main{
-  background-color: #020299;
-  /* height: 1000px; */
-  display: inline-flex;
-  color: #ffffff;
-}
 
-.imgMain{
-  height: 70%;
-  margin-left: 50%;
-  margin-top: 5%;
-  
+  .main{
+    background-color: #020299;
+    /* height: 1000px; */
+    display: inline-flex;
+    color: #ffffff;
+  }
 
-}
-.title{
-  
-  margin-top: 8%;
-  margin-left: 5%;
-  font-size: -webkit-xxx-large;
-  font-family: 'PT Serif', serif;
-}
-.subtitle{
+  .imgMain{
+    height: 70%;
+    margin-left: 50%;
+    margin-top: 5%;
+    
 
-  margin-top: -2%;
-    margin-left: 35%;
-  font-size: larger;
-  font-family: 'ABeeZee', sans-serif;
-}
-.text{
-  margin-top: 5%;
-    width: 70%;
-  margin-left: 5%;
-  font-family: 'ABeeZee', sans-serif;
-}
+  }
+  .title{
+    
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: -webkit-xxx-large;
+    font-family: 'PT Serif', serif;
+  }
+  .subtitle{
 
-.buttonWork{
+    margin-top: -2%;
+      margin-left: 35%;
+    font-size: larger;
+    font-family: 'ABeeZee', sans-serif;
+  }
+  .text{
+    margin-top: 5%;
+      width: 70%;
+    margin-left: 5%;
+    font-family: 'ABeeZee', sans-serif;
+  }
 
-  margin-left: 25%;
-  margin-top: 35%;
-}
+  .buttonWork{
+
+    margin-left: 25%;
+    margin-top: 35%;
+  }
 
 @media only screen and (max-width: 765px) {
   /* For mobile phones: */
@@ -81,7 +82,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.imgMain{
     margin-top: 15%;
     /* height: 70%;

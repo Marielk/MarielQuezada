@@ -1,5 +1,5 @@
 .buttonMenu{
-  padding-left: 44%;
+  padding-left: 35%;
   background-color: #000069;  
  
 }
@@ -18,12 +18,34 @@
 }
 #logo{
   width: 215px;
-  height: 100px;
+  height: 110px;
+  display: inline-block;
 }
-
-  
+#navbarNav{
+  display: -webkit-box;
+}
+.logoResponsive{
+  display: none;
+ 
+}
+.responsiveMenu{
+  display: none;
+}
       @media only screen and (max-width: 768px) {
         .cBtn{
           float: right;
+        }
+        .logoResponsive{
+          display: inline-block;
+          width: 130px;
+        }
+        #logo{
+          display: none;
+        }
+        #navbarNav{
+          display: none;
+        }
+        .responsiveMenu{
+          display: inline-block;
         }
       }
