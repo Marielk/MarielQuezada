@@ -1,27 +1,41 @@
 
  <label>
-  <input type="checkbox">
-  <span class="menu">
-    <span class="hamburger"></span>
-  </span>
-  <ul>
-    <li>
-      <a routerLink="" href="#">Bienvenida</a>
-    </li>
-    <li>
-      <a  routerLink="welcome/portafolio" href="#">Portafolio</a>
-    </li>
-    <li>
-      <a routerLink="welcome/service" href="#">Servicios</a>
-    </li>
-    <li>
-      <a routerLink="welcome/references" href="#">Referencias</a>
-    </li>
-    <li>
-      <a routerLink="welcome/aboutme" href="#">Sobre mi</a>
-    </li>
-    <li>
-      <a  routerLink="welcome/contact" href="#">Contacto</a>
-    </li>
-  </ul>
+   <form name="formNav">
+     <input  name="check" type="checkbox"> 
+     <span class="menu">
+       <span class="hamburger"></span>
+     </span>
+     <ul>
+       <li>
+         <button class="btnMenu" (click)="validate()">
+           <a routerLink="">Bienvenida</a>
+         </button>
+       </li>
+       <li>
+          <button  class="btnMenu" (click)="validate()">
+            <a routerLink="welcome/portafolio" href="#">Portafolio </a>
+          </button>
+       </li>
+       <li>
+          <button class="btnMenu" (click)="validate()">
+            <a routerLink="welcome/service">Servicios</a>
+          </button>
+       </li>
+       <li>
+        <button class="btnMenu" (click)="validate()">
+          <a routerLink="welcome/references">Referencias</a>
+        </button>
+       </li>
+       <li>
+        <button class="btnMenu" (click)="validate()">
+          <a routerLink="welcome/aboutme">Sobre mí</a>
+        </button>
+       </li>
+       <li>
+        <button class="btnMenu" (click)="validate()">
+          <a routerLink="welcome/contact" >Contacto</a>
+        </button>
+       </li>
+     </ul>
+   </form>
 </label>
