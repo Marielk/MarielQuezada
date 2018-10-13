@@ -2,7 +2,7 @@
   .main{
     background-color: #020299;
     /* height: 1000px; */
-    display: inline-flex;
+    display: list-item;
     color: #ffffff;
   }
 
@@ -85,10 +85,16 @@
 @media only screen and (max-width: 768px) {
 	.imgMain{
     margin-top: 15%;
+    margin-left: 0%; 
+    width: 350px;
+    height: 70%;
     /* height: 70%;
-    margin-left: 0%;
     transform: translateY(-100%); */
 
+  }
+
+  .imgContainer{
+    margin-left: 0%;
   }
   .title{
     

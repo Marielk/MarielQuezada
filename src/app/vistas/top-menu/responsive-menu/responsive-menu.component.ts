@@ -44,17 +44,28 @@ export class ResponsiveMenuComponent implements OnInit {
   // }
 
   validate() {
+    // const body = document.getElementsByTagName('body')[0];
+    // body.style.display = 'inline';
     const input = this.form[0][0];
     if (input.checked === true) {
       input.checked = false;
     }
     // console.log(this.input.checked);
   }
+
+  back() {
+    // const body = document.getElementsByTagName('body')[0];
+    // body.style.display = '-webkit-box';
+    // console.log(body.style.display);
+    const input = this.form[0][0];
+    if (input.checked === true) {
+      input.checked = false;
+    }
   // on() {
   //   this.input.value = 'on';
   // }
   // return() {
   //   this.input.nodeValue = 'off';
   // }
-
+  }
 }

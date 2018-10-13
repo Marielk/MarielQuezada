@@ -6,8 +6,8 @@
 
 label .hamburger {
   position: absolute;
-  top: 42px;
-  left: 32px;
+  top: 35px;
+  left: 21px;
   width: 30px;
   height: 2px;
   padding: 0px;
@@ -62,8 +62,8 @@ label input:checked + .menu + ul { opacity: 1; }
 
 label .hamburger {
   position: absolute;
-  top: 42px;
-  left: 32px;
+  top: 35px;
+  left: 21px;
   width: 30px;
   height: 2px;
   background: #000;
@@ -120,8 +120,8 @@ label .menu {
   right: 12px;
   top: -34px;
   z-index: 100;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   background: #00bcd4;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
