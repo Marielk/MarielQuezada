@@ -1,0 +1,80 @@
+.mainContainerReference{
+  align-items: center;
+}
+.title{
+  margin: auto;
+}
+.card{
+  background-color: #000069;
+  text-align: center;
+  margin: auto;
+}
+.cardText{
+ color: white;
+ font-family: 'ABeeZee', sans-serif;
+}
+.profilePicture{
+  max-width: 90px;
+  max-height: 90px;
+  border-radius: 50%;
+  float: left;
+}
+.name{
+  background-color: #29b6f6;
+  color: black;
+  font-family:  'PT Serif', serif;
+  border-width: 0px;
+  margin-top: 5%;
+  float: right;
+}
+
+.carousel-control-prev{
+  position: fixed;
+    bottom: 200px;
+  width: 2%;
+  align-items: flex-end;
+}
+.carousel-control-next{
+  position: fixed;
+  bottom: 200px;
+  width: 2%;
+  align-items: flex-end;
+}
+.carousel-indicators {
+  margin-top: 5%;
+  position: fixed; 
+  bottom: 57px;
+}
+.carousel-indicators li{
+  border-radius: 50%; 
+  width: 15px;
+  height: 15px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.carousel-control-prev{
+    bottom: 60px;
+    align-items: flex-end;
+    width: 6%;
+    
+  }
+  .carousel-control-next{
+    bottom: 60px;
+    width: 6%;
+    align-items: flex-end;
+  }
+  .carousel-indicators li{
+    border-radius: 50%; 
+    width: 15px;
+    height: 15px;
+  }
+
+  .card{
+    width: 500px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+  }
+  
+}

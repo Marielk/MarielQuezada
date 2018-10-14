@@ -36,6 +36,8 @@ import { AppRoutingModule } from './app-routing.module';
 import {APP_BASE_HREF} from '@angular/common';
 import { MesageService } from './servicios/mesage.service';
 import { MesageFormContactViewComponent } from './vistas/contact/mesage-form-contact-view/mesage-form-contact-view.component';
+import { GetLinkedinInfoService } from './servicios/get-linkedin-info.service';
+
 
 
 // librerias
@@ -68,7 +70,7 @@ import { MesageFormContactViewComponent } from './vistas/contact/mesage-form-con
     AngularFirestoreModule.enablePersistence(),
     AngularFireStorageModule
   ],
-  providers: [ AngularFirestore, MesageService, {provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [ AngularFirestore, MesageService, GetLinkedinInfoService,  {provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
