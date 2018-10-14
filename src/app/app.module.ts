@@ -35,6 +35,7 @@ import { ContactFormInterface } from './models/contactFormInterface';
 import { AppRoutingModule } from './app-routing.module';
 import {APP_BASE_HREF} from '@angular/common';
 import { MesageService } from './servicios/mesage.service';
+import { MesageFormContactViewComponent } from './vistas/contact/mesage-form-contact-view/mesage-form-contact-view.component';
 
 
 // librerias
@@ -55,6 +56,7 @@ import { MesageService } from './servicios/mesage.service';
     ButtonWorkComponent,
     ResponsiveMenuComponent,
     ContactFormComponent,
+    MesageFormContactViewComponent,
 
   ],
   imports: [

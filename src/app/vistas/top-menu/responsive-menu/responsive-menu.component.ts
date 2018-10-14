@@ -10,6 +10,7 @@ export class ResponsiveMenuComponent implements OnInit {
   // formEntrie: any = ;
   // formEntrieDeep: any = Object.entries(this.formEntrie);
   input: any;
+  buton: HTMLButtonElement;
   constructor() {
   }
 
@@ -45,12 +46,17 @@ export class ResponsiveMenuComponent implements OnInit {
 
   enableButtons() {
     const input = this.form[0][0];
-    const btn = document.getElementsByClassName('btnMenu');
-    const btns = [btn[0], btn[1], btn[2], btn[3], btn[4], btn[5]];
+    const btn1 = (document.getElementById('btn1')as HTMLButtonElement);
+    const btn2 = (document.getElementById('btn2')as HTMLButtonElement);
+    const btn3 = (document.getElementById('btn3')as HTMLButtonElement);
+    const btn4 = (document.getElementById('btn4')as HTMLButtonElement);
+    const btn5 = (document.getElementById('btn5')as HTMLButtonElement);
+    const btn6 = (document.getElementById('btn6')as HTMLButtonElement);
+    const btns = [btn1, btn2, btn3, btn4, btn5, btn6];
      // console.log(btns);
     if (input.checked === true) {
       btns.forEach(buton => {
-        buton.setAttribute('disabled', 'false');
+        buton.disabled = false;
         // console.log('false');
       });
     }
@@ -63,7 +69,7 @@ export class ResponsiveMenuComponent implements OnInit {
     if (input.checked === true) {
       input.checked = false;
     }
-    // console.log(this.input.checked);
+     // console.log(this.input.checked);
   }
 
   // back() {
