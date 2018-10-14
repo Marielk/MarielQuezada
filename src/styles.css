@@ -6,4 +6,81 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  background-color: #020299;
+  color: #ffffff;
+}
+
+.title{
+
+  font-size: -webkit-xxx-large;
+  font-family: 'PT Serif', serif;
+}
+.subtitle{
+  font-size: larger;
+  font-family: 'ABeeZee', sans-serif;
+}
+.text{
+  font-family: 'ABeeZee', sans-serif;
+}
+
+
+@media only screen and (max-width: 765px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+  }
+
+
+  
+  .title{
+    
+    margin-left: 5%;
+    font-size: x-large;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    /* transform: translateY(550px); */
+  }
+  .subtitle{
+
+    margin-left: 20%;
+    font-size: medium;
+    font-family: 'ABeeZee', sans-serif;
+    /* transform: translateY(560px); */
+  }
+  .text{
+    
+    width: 95%;
+    margin-left: 5%;
+    font-family: 'ABeeZee', sans-serif;
+    /* transform: translateY(580px); */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+	
+  
+
+  .title{
+    
+    margin-left: 5%;
+    font-size: xx-large;
+    font-family: 'PT Serif', serif;
+ 
+  }
+  .subtitle{
+
+    
+    margin-left: 20%;
+    font-size: medium;
+    font-family: 'ABeeZee', sans-serif;
+    
+  }
+  .text{
+    text-align: justify;
+    margin-left: 5%;
+    padding: 2%;
+    padding-right: 10%;
+    font-family: 'ABeeZee', sans-serif;
+    
+  }
 }

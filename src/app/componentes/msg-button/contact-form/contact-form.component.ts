@@ -39,8 +39,8 @@ export class ContactFormComponent implements OnInit {
     this.mesage.company = this.contactForm.value.company;
     this.mesage.contact = this.contactForm.value.contact;
     this.mesage.mesage = this.contactForm.value.mesage;
-
     this.sendMesageService.sendMesage(this.mesage);
+    alert('Gracias por contactarme, te respondere a la brevedad!');
   }
 
 }

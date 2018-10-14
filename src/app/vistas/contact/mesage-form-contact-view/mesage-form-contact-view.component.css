@@ -1,0 +1,35 @@
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: .5rem;
+}
+
+.formContainer{
+  padding: 5%;
+  margin-bottom: 20%;
+  margin-top: 15%;
+}
+
+/* modal estilo */
+.btnEnviar{
+  background-color: #ec407a;
+}
+
+.btnModal{
+  font-family: 'PT Serif', serif;
+  margin-left: 5%;
+}
+.btnCancel{
+  background-color: #0086c3;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .formContainer{
+    
+    margin-top: 2%;
+  }
+
+  
+}

@@ -1,3 +1,34 @@
-<p>
-  mesage-form-contact-view works!
-</p>
+<form [formGroup]="contactForm">
+    <div class="form-group formContainer">
+      <div class="row">
+        <div class="clas col-sm-12">
+          <label>
+            Nombre:
+            <input class="form-control" type="text" formControlName="name" required>
+          </label>
+        
+          <label>
+            Empresa:
+            <input class="form-control" type="text" formControlName="company" required>
+          </label>
+        
+          <label>
+            Contacto:
+            <input class="form-control" type="text" formControlName="contact" required>
+          </label>
+        
+          <label>
+            Mensaje:
+            <textarea class="form-control" type="text" formControlName="mesage" required></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="button" class="btn btn-secondary btnCancel btnModal" (click)="cancel()">Cancelar</button>
+          <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" class="btn btn-primary btnEnviar btnModal">Enviar</button>
+        </div>
+      </div>
+    </div>
+    
+  </form>

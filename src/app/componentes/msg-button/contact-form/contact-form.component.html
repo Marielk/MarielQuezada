@@ -1,4 +1,4 @@
-<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+<form [formGroup]="contactForm">
   <div class="form-group">
 
     <label>
@@ -25,5 +25,5 @@
 </form>
 <div class="modal-footer">
   <button type="button" class="btn btn-secondary btnCancel btnModal" data-dismiss="modal">Cancelar</button>
-  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" class="btn btn-primary btnEnviar btnModal">Enviar</button>
+  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" class="btn btn-primary btnEnviar btnModal" data-dismiss="modal">Enviar</button>
 </div>
