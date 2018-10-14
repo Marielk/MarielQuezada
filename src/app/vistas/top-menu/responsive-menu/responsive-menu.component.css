@@ -147,6 +147,7 @@ label a {
   display: block;
   color: #000;
   text-decoration: none;
+  font-family: 'PT Serif', serif;
 } 
 
 .btnMenu{

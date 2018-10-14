@@ -1,0 +1,29 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+
+    <label>
+      Nombre:
+      <input class="form-control" type="text" formControlName="name" required>
+    </label>
+  
+    <label>
+      Empresa:
+      <input class="form-control" type="text" formControlName="company" required>
+    </label>
+  
+    <label>
+      Contacto:
+      <input class="form-control" type="text" formControlName="contact" required>
+    </label>
+  
+    <label>
+      Mensaje:
+      <textarea class="form-control" type="text" formControlName="mesage" required></textarea>
+    </label>
+    
+  </div>
+</form>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary btnCancel btnModal" data-dismiss="modal">Cancelar</button>
+  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" class="btn btn-primary btnEnviar btnModal">Enviar</button>
+</div>

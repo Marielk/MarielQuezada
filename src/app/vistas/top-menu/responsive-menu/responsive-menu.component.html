@@ -1,38 +1,38 @@
 
  <label>
-   <form name="formNav">
-     <input  name="check" type="checkbox"> 
+   <form  name="form">
+     <input  name="check" (click)="enableButtons()" type="checkbox"> 
      <span class="menu">
        <span class="hamburger"></span>
      </span>
      <ul>
        <li>
-         <button class="btnMenu" (click)= "back()">
+         <button class="btnMenu" disabled (click)= "validate()">
            <a routerLink="">Bienvenida</a>
          </button>
        </li>
        <li>
-          <button  class="btnMenu" (click)="validate()">
+          <button  class="btnMenu" disabled (click)="validate()">
             <a routerLink="welcome/portafolio" href="#">Portafolio </a>
           </button>
        </li>
        <li>
-          <button class="btnMenu" (click)="validate()">
+          <button class="btnMenu" disabled (click)="validate()">
             <a routerLink="welcome/service">Servicios</a>
           </button>
        </li>
        <li>
-        <button class="btnMenu" (click)="validate()">
+        <button class="btnMenu" disabled (click)="validate()">
           <a routerLink="welcome/references">Referencias</a>
         </button>
        </li>
        <li>
-        <button class="btnMenu" (click)="validate()">
+        <button class="btnMenu" disabled (click)="validate()">
           <a routerLink="welcome/aboutme">Sobre mí</a>
         </button>
        </li>
        <li>
-        <button class="btnMenu" (click)="validate()">
+        <button class="btnMenu" disabled (click)="validate()">
           <a routerLink="welcome/contact" >Contacto</a>
         </button>
        </li>

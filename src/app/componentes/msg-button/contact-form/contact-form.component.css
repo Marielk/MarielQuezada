@@ -1,0 +1,19 @@
+
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: .5rem;
+}
+
+/* modal estilo */
+.btnEnviar{
+  background-color: #ec407a;
+}
+
+.btnModal{
+  font-family: 'PT Serif', serif;
+}
+.btnCancel{
+  background-color: #0086c3;
+}

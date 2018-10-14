@@ -91,7 +91,14 @@
     from {opacity: 0; transform: rotateZ(180deg);}
     to {opacity: 1; transform: rotateZ(0deg);}
 }
-/* modal estilo */
-.btnEnviar{
-  background-color: #ec407a;
+
+
+.modal-header{
+  background-color: #5533cb;
+  color: white;
+  font-family: 'PT Serif', serif;
+}
+.modal-body{
+  font-family: 'ABeeZee', sans-serif;
+  background-color: #73e8ff;
 }

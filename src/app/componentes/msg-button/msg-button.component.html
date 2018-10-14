@@ -16,12 +16,12 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          <app-contact-form></app-contact-form>   
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary btnEnviar">Enviar</button>
-        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btnCancel btnModal" data-dismiss="modal">Cancelar</button>
+          <button type="submit" [disabled]="!contactForm.valid" class="btn btn-primary btnEnviar btnModal">Enviar</button>
+        </div> -->
       </div>
     </div>
   </div>
