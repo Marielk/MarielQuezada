@@ -9,26 +9,26 @@ import { ContactComponent } from './vistas/contact/contact.component';
 
 
 
-const app_routes: Routes=[
+const app_routes: Routes = [
   {
     path: '', component: WelcomeComponent
   },
   {
-    path: 'welcome/portafolio', component: PortafolioComponent
+    path: 'portafolio', component: PortafolioComponent
   },
   {
-    path: 'welcome/service', component: ServiceComponent
+    path: 'service', component: ServiceComponent
   },
   {
-    path: 'welcome/references', component: ReferencesComponent
+    path: 'references', component: ReferencesComponent
   },
   {
-    path: 'welcome/aboutme', component: AboutmeComponent
+    path: 'aboutme', component: AboutmeComponent
   },
   {
-    path: 'welcome/contact', component: ContactComponent
+    path: 'contact', component: ContactComponent
   },
-  
+
   {
     path: '**', pathMatch: 'full', redirectTo: ''
   }

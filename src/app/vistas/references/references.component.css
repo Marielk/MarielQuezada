@@ -6,7 +6,6 @@
 }
 .card{
   background-color: #000069;
-  text-align: center;
   margin: auto;
 }
 .cardText{
@@ -54,13 +53,13 @@
 
 @media only screen and (max-width: 768px) {
 	.carousel-control-prev{
-    bottom: 60px;
+   
     align-items: flex-end;
     width: 6%;
     
   }
   .carousel-control-next{
-    bottom: 60px;
+    
     width: 6%;
     align-items: flex-end;
   }
@@ -72,9 +71,11 @@
 
   .card{
     width: 500px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 0%;
+    margin-right: 0%;
     text-align: left;
+    padding-right: 30%;
+    margin-bottom: 20%;
   }
   
 }
