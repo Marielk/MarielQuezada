@@ -1,0 +1,67 @@
+.full{
+  display:inline-block;
+}
+.responsive{
+  display: none;
+}
+.title{
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
+.card{
+  background-color: #000069;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+.cardText{
+ color: white;
+ font-family: 'ABeeZee', sans-serif;
+}
+.profileIMG{
+ 
+  max-width: 100%;
+    padding: inherit;
+    margin-top: 4%;
+    border-radius: 5%;
+}
+.footerIcon{
+  font-size: xx-large;
+  margin-left: 18%;
+  color: #ec407a;
+}
+.footerText{
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+
+  .full{
+    display:none;
+  }
+  .responsive{
+    display: inline-block;
+  }
+  .verMas{
+    margin-top: 10%;
+  }
+  .card{
+    width: 500px;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: left;
+   margin-top: 4%;
+   margin-bottom: 1%;
+  }
+  .innerResponsive{
+    padding: 0%;
+    padding-right: 65%;
+  }
+
+  .profileIMG{
+
+    margin-top: 5%;
+    margin-bottom:25%;
+      
+  }
+  
+}

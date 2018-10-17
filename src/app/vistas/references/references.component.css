@@ -2,7 +2,8 @@
   align-items: center;
 }
 .title{
-  margin: auto;
+  margin-left: 15%;
+  margin-bottom: 3%;
 }
 .card{
   background-color: #000069;
