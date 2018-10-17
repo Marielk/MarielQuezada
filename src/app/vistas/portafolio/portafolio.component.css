@@ -1,0 +1,118 @@
+.full{
+  display:inline-block;
+}
+.responsive{
+  display: none;
+}
+.title{
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
+.card{
+  background-color: #000069;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+.cardText{
+ color: white;
+ font-family: 'ABeeZee', sans-serif;
+}
+
+.footerIcon{
+  font-size: xx-large;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  color: yellow;
+}
+.footerText{
+  text-align: center;
+}
+
+.imgTrabajo{
+  max-width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+.btnLinks{
+  margin-left: 10%;
+  font-size: medium;
+}
+
+
+.carousel-control-prev{
+  position: fixed;
+    bottom: 200px;
+  width: 2%;
+  align-items: flex-end;
+}
+.carousel-control-next{
+  position: fixed;
+  bottom: 200px;
+  width: 2%;
+  align-items: flex-end;
+}
+.carousel-indicators {
+  margin-top: 5%;
+  position: fixed; 
+  bottom: 57px;
+}
+.carousel-indicators li{
+  border-radius: 50%; 
+  width: 15px;
+  height: 15px;
+}
+
+.fireIcon{
+  height: 30px;
+  width: 30px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .title{
+    margin-left: 5%;
+   
+  }
+
+  .full{
+    display:none;
+  }
+  .responsive{
+    display: inline-block;
+  }
+  .verMas{
+    margin-top: 10%;
+  }
+  .card{
+    width: 365px;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: left;
+   margin-top: 4%;
+   margin-bottom: 20%;
+  }
+  .innerResponsive{
+    padding: 0%;
+    padding-right: 30%;
+  }
+  .carousel-control-prev{
+   
+    align-items: flex-end;
+    width: 6%;
+    
+  }
+  .carousel-control-next{
+    
+    width: 6%;
+    align-items: flex-end;
+  }
+  .carousel-indicators li{
+    border-radius: 50%; 
+    width: 15px;
+    height: 15px;
+  }
+  
+}
