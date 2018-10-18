@@ -43,6 +43,11 @@ a {
 	/* @include fade-transition(background); */
 
 }
+
+a {
+	margin-top: 15%;
+	margin-left: 40%;
+}
     a:hover {
       background: #62efff;
     }
@@ -136,7 +141,7 @@ i {
 	80% {opacity: 0.0}
 	100% { left: 82%}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 	a {
 		margin-top: 20%;
 		margin-left: 50%;

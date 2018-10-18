@@ -2,12 +2,18 @@
   align-items: center;
 }
 .title{
-  margin-left: 15%;
+  /* margin-left: 15%; */
   margin-bottom: 3%;
+}
+.top {
+  text-align: center;
 }
 .card{
   background-color: #000069;
-  margin: auto;
+  height: 340px;
+  width: 1380px;
+  margin-left: 22%;
+  margin-bottom: 10%;
 }
 .cardText{
  color: white;
@@ -25,6 +31,7 @@
   font-family:  'PT Serif', serif;
   border-width: 0px;
   margin-top: 5%;
+  margin-left: 20%;
   float: right;
 }
 
@@ -50,7 +57,22 @@
   width: 15px;
   height: 15px;
 }
-
+.violet{
+  position: relative;
+}
+.front{
+  position: relative;
+}
+.natalia{
+  margin-top:1%;
+}
+.ux{
+  margin-top: 1%;
+}
+.natiCard{
+  height: 340px;
+  width: 1380px;
+}
 
 @media only screen and (max-width: 768px) {
 	.carousel-control-prev{
@@ -73,10 +95,37 @@
   .card{
     width: 500px;
     margin-left: 0%;
+    height: 405px;
     margin-right: 0%;
     text-align: left;
     padding-right: 30%;
     margin-bottom: 20%;
+  }
+  
+  .name{
+    margin-top: 2%;
+    margin-left: 10%;
+    float: right;
+  }
+  .violet{
+    position: absolute;
+    bottom: 53px;
+  }
+  .front{
+    position: absolute;
+    bottom: 18px;
+    left: 163px;
+  }
+  .natalia{
+    margin-top:1%;
+  }
+  .ux{
+    margin-top: 1%;
+  }
+  .natiCard{
+    height: 597px;
+    width: 519px;
+    margin-bottom: 15%;
   }
   
 }

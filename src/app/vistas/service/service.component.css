@@ -1,9 +1,12 @@
-
+.top {
+  text-align: center;
+}
 .card {
   display: inline-block;
   margin-top: 6%;
   margin-right: 4%;
   margin-left: 4%;
+  height: 440px;
   margin-bottom: 15%;
   position: relative;
   padding: 0;
