@@ -7,7 +7,16 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import * as firebase from 'firebase';
+// libreria para traducir
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
+// store Redux
+import { StoreModule } from '@ngrx/store';
+import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
+import { reducers, metaReducers } from './state_management/reducers';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 // vistas
 import { WelcomeComponent } from './vistas/welcome/welcome.component';
@@ -16,6 +25,7 @@ import { ServiceComponent } from './vistas/service/service.component';
 import { ReferencesComponent } from './vistas/references/references.component';
 import { AboutmeComponent } from './vistas/aboutme/aboutme.component';
 import { ContactComponent } from './vistas/contact/contact.component';
+import { BlogComponent } from './vistas/blog/blog.component';
 
 // elementos transversales a todo el sitio
 import { TopMenuComponent } from './vistas/top-menu/top-menu.component';
@@ -36,7 +46,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {APP_BASE_HREF} from '@angular/common';
 import { MesageService } from './servicios/mesage.service';
 import { MesageFormContactViewComponent } from './vistas/contact/mesage-form-contact-view/mesage-form-contact-view.component';
-import { GetLinkedinInfoService } from './servicios/get-linkedin-info.service';
+
 
 
 
@@ -59,7 +69,7 @@ import { GetLinkedinInfoService } from './servicios/get-linkedin-info.service';
     ResponsiveMenuComponent,
     ContactFormComponent,
     MesageFormContactViewComponent,
-
+    BlogComponent
   ],
   imports: [
     BrowserModule,
@@ -68,9 +78,26 @@ import { GetLinkedinInfoService } from './servicios/get-linkedin-info.service';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule.enablePersistence(),
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      },
+    }),
+    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreRouterConnectingModule.forRoot({ stateKey: 'router' }),
+    StoreDevtoolsModule.instrument({
+     maxAge: 25 // Retains last 25 states
+    }),
   ],
-  providers: [ AngularFirestore, MesageService, GetLinkedinInfoService,  {provide: APP_BASE_HREF, useValue : '/' }],
+  providers: [ AngularFirestore, MesageService, {provide: APP_BASE_HREF, useValue : '/' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

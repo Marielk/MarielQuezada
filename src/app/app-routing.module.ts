@@ -3,7 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import { WelcomeComponent } from './vistas/welcome/welcome.component';
 import { PortafolioComponent } from './vistas/portafolio/portafolio.component';
 import { ServiceComponent } from './vistas/service/service.component';
-import { ReferencesComponent } from './vistas/references/references.component';
+import { BlogComponent } from './vistas/blog/blog.component';
 import { AboutmeComponent } from './vistas/aboutme/aboutme.component';
 import { ContactComponent } from './vistas/contact/contact.component';
 
@@ -20,7 +20,7 @@ const app_routes: Routes = [
     path: 'service', component: ServiceComponent
   },
   {
-    path: 'references', component: ReferencesComponent
+    path: 'blog', component: BlogComponent
   },
   {
     path: 'aboutme', component: AboutmeComponent

@@ -8,33 +8,34 @@
      <ul>
        <li>
          <button id="btn1"  class="btnMenu" disabled (click)= "validate()">
-           <a routerLink="">Bienvenida</a>
+           <a routerLink="" [translate]="'top_menu.home'"></a>
          </button>
        </li>
        <li>
           <button id="btn2"  class="btnMenu" disabled (click)="validate()">
-            <a routerLink="portafolio" href="#">Portafolio </a>
+            <a routerLink="portafolio" href="#" [translate]="'top_menu.works'"></a>
           </button>
        </li>
        <li>
           <button id="btn3" class="btnMenu" disabled (click)="validate()">
-            <a routerLink="service">Servicios</a>
+            <a routerLink="service" [translate]="'top_menu.services'"></a>
           </button>
        </li>
        <li>
         <button id="btn4" class="btnMenu" disabled (click)="validate()">
-          <a routerLink="references">Referencias</a>
+          <a routerLink="blog" >Blog</a>
         </button>
        </li>
        <li>
         <button id="btn5" class="btnMenu" disabled (click)="validate()">
-          <a routerLink="aboutme">Sobre mí</a>
+          <a routerLink="aboutme" [translate]="'top_menu.about'"></a>
         </button>
        </li>
        <li>
         <button id="btn6" class="btnMenu" disabled (click)="validate()">
-          <a routerLink="contact" >Contacto</a>
+          <a routerLink="contact" [translate]="'top_menu.contact'"></a>
         </button>
+        <button id="btn7" class="btnMenu" [translate]="'top_menu.language'" (click)="changeLanguage()"></button>
        </li>
      </ul>
    </form>

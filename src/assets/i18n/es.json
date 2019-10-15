@@ -1,0 +1,15 @@
+{
+  "top_menu":{
+    "home": "Bienvenida",
+    "works": "Portafolio",
+    "services": "Servicios",
+    "coments": "Referencias",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "language": "Cambiar a Inglés"
+  },
+  "welcome":{
+    "text": "Soy apasionada del código y del desarrollo web enfocado en los usuarios. Desafíame y logremos el éxito de tu proyecto.",
+    "button": "Ver Proyectos"
+  }
+}

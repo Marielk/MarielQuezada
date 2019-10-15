@@ -1,0 +1,15 @@
+{
+  "top_menu":{
+    "home": "Welcome",
+    "works": "Portfolio",
+    "services": "Services",
+    "coments": "References",
+    "about": "About me",
+    "contact": "Contact me",
+    "language": "Change to Spanish"
+  },
+  "welcome":{
+    "text": "I am a passionate about code and web development focus on users. Challenge me and achive the succesfull of your project",
+    "button": "See my work"
+  }
+}
