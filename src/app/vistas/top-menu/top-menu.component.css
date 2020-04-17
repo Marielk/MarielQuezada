@@ -1,23 +1,47 @@
 .buttonMenu{
   padding-left: 35%;
-  background-color: #000069;  
- 
+}
+
+.buttonMenu-day{
+  background-color:  #fef6e4;  
+}
+.buttonMenu-nigth{
+  background-color:  #16161a;  
 }
 .nav-link{
   color: white!important;
   font-family: 'PT Serif', serif;
 }
+
+.nav-link-day{
+  color: #172c66!important;  
+}
+.nav-link-nigth{
+  color: white!important;
+}
+
 .c8{
   width: auto;
 }
+
+.translate-btn{
+  background: transparent;
+  border: none;
+}
 .topNavBar{
-  background-color: #000069!important; 
+  
   padding-right: 0px; 
   padding-left: 0px; 
   width: 100%;
 }
+.topNavBar-day{
+  background-color: #fef6e4!important; 
+}
+.topNavBar-nigth{
+  background-color: #16161a!important; 
+}
 #logo{
-  width: 215px;
+  width: 175px;
   height: 110px;
   display: inline-block;
 }
@@ -49,3 +73,15 @@
           display: inline-block;
         }
       }
+
+      @media only screen and (min-width: 2560px) {
+        #logo{
+          width: 250px;
+        height: 150px;
+        }
+        .nav-link{
+          font-size: 2em;
+        }
+      }
+
+      

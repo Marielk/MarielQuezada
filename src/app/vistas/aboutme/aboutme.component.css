@@ -12,15 +12,31 @@
   text-align: center;
 }
 .card{
-  background-color: #000069;
+  
   margin: auto;
   margin-top: 2%;
   margin-bottom: 8%;
 }
+
+.card-day{
+ background-color: #fffffe;
+}
+.card-nigth{
+  background-color: #16161a;
+}
+
 .cardText{
- color: white;
+ 
  font-family: 'ABeeZee', sans-serif;
 }
+
+.cardText-day{
+  columns: #172c66;
+}
+.cardText-nigth{
+  color: #94a1b2;
+}
+
 .profileIMG{
  
   max-width: 100%;
@@ -31,7 +47,12 @@
 .footerIcon{
   font-size: xx-large;
   margin-left: 18%;
-  color: #ec407a;
+}
+.footerIcon-day{
+  color: #f582ae;
+}
+.footerIcon-nigth{
+  color: #7f5af0;
 }
 .footerText{
   text-align: center;
@@ -40,9 +61,19 @@
   float: right;
   margin-top: 5%;
   margin-right: 5%;
-  background-color: mediumturquoise;
-  color: black;
+  
 }
+
+.cvN-day{
+  background-color: #f582ae;
+  color: #001858;
+}
+
+.cvN-nigth{
+  background-color: #7f5af0;
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
 
   .full{

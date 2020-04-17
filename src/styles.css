@@ -6,8 +6,18 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #020299;
+  height: -webkit-fill-available;
+  /* max-height: max-content; */
+} 
+
+.body-nigth{
+  background-color: #242629;
   color: #ffffff;
+}
+
+.body-day{
+  background-color: #fef6e4;
+  color:#172c66;
 }
 
 .title{
@@ -23,6 +33,17 @@ html, body {
   font-family: 'ABeeZee', sans-serif;
 }
 
+.btn-primary-day {
+  background-color: #f582ae !important;
+}
+.btn-primary-nigth {
+  background-color: #7f5af0 !important;
+}
+
+.modal-footer{
+  display: flex;
+  justify-content: space-between;
+}
 
 @media only screen and (max-width: 765px) {
   /* For mobile phones: */

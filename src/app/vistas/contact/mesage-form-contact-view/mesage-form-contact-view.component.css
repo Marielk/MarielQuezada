@@ -12,15 +12,24 @@ label {
 
 /* modal estilo */
 .btnEnviar{
-  background-color: #ec407a;
+  background-color: #7f5af0;
+}
+
+.btnEnviar-day{
+  background-color: #f582ae;
+  color: #001858;
+}
+.btnEnviar-nigth{
+  background-color: #7f5af0;
+  color: white;
 }
 
 .btnModal{
   font-family: 'PT Serif', serif;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 .btnCancel{
-  background-color: #0086c3;
+  background-color: #72757e;
 }
 
 

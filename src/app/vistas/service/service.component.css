@@ -10,11 +10,20 @@
   margin-bottom: 15%;
   position: relative;
   padding: 0;
-  background-color: #000069;
   text-align: center;
   border-radius: 5%;
-  box-shadow: 0px 2px 5px rgba(255, 33, 106, 0.7);
+  
 }
+
+.card-day{
+  background-color: #f3d2c1;
+ }
+ 
+ .card-nigth{
+   background-color: #16161a;
+   box-shadow: 0px 2px 5px #7f5af0;
+ }
+ 
 
 .card__image {
   position: absolute;
@@ -26,10 +35,20 @@
   padding: 0px;
   display: flex;
   transform: translate(-50%, -50%);
-  background-color: #29b6f6;
+  
   border-radius: 50%;
-  box-shadow: 0px 3px 6px rgba(255, 33, 106, 0.7);
+  
 }
+
+.card__image-day{
+  box-shadow: 0px 3px 6px #f582ae;
+  background-color: #f582ae;
+ }
+ 
+ .card__image-nigth{
+  box-shadow: 0px 3px 6px #7f5af0;
+  background-color: #7f5af0;
+ }
 
 .icon {
   height: 100%;
@@ -50,19 +69,36 @@
 
 .card p {
   margin-top: 0.5rem;
+  
+}
+
+.card p.day{
+  color: #172c66;
+}
+
+.card p.nigth{
+  color: #94a1b2 !important;
 }
 
 h3{
   font-size: 1.35rem;
     line-height: 1em;
     height: var(--header-height);
-    background-color: #5533cb;;
+    
     font-size: 1.4em;
     letter-spacing: 0.05em;
     font-weight: 300;
     color: white;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+}
+
+h3.day{
+  background-color: #f582ae;
+}
+
+h3.nigth{
+  background-color: #7f5af0;
 }
 
 p {

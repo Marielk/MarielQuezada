@@ -14,7 +14,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 // store Redux
 import { StoreModule } from '@ngrx/store';
-import { StoreRouterConnectingModule, routerReducer } from '@ngrx/router-store';
+import { StoreRouterConnectingModule, routerReducer, DefaultRouterStateSerializer } from '@ngrx/router-store';
 import { reducers, metaReducers } from './state_management/reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
@@ -69,7 +69,8 @@ import { MesageFormContactViewComponent } from './vistas/contact/mesage-form-con
     ResponsiveMenuComponent,
     ContactFormComponent,
     MesageFormContactViewComponent,
-    BlogComponent
+    BlogComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -88,7 +89,7 @@ import { MesageFormContactViewComponent } from './vistas/contact/mesage-form-con
       },
     }),
     StoreModule.forRoot(reducers, { metaReducers }),
-    StoreRouterConnectingModule.forRoot({ stateKey: 'router' }),
+    StoreRouterConnectingModule.forRoot({ serializer: DefaultRouterStateSerializer, stateKey: 'router' }),
     StoreDevtoolsModule.instrument({
      maxAge: 25 // Retains last 25 states
     }),

@@ -92,8 +92,14 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #00bcd4, 0 0 0 100vh #00bcd4;
+  box-shadow: 0 0 0 100vw #7f5af0, 0 0 0 100vh #7f5af0;
   border-radius: 0;
+}
+label input:checked + .menu-day {
+  box-shadow: 0 0 0 100vw #f582ae, 0 0 0 100vh #f582ae;
+}
+label input:checked + .menu-nigth {
+  box-shadow: 0 0 0 100vw #7f5af0, 0 0 0 100vh #7f5af0;
 }
 
 label input:checked + .menu .hamburger {
@@ -122,13 +128,23 @@ label .menu {
   z-index: 100;
   width: 70px;
   height: 70px;
-  background: #00bcd4;
+  
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #00bcd4, 0 0 0 0 #00bcd4;
+  
   cursor: pointer;
 }
+
+label .menu-day {
+  background: #f582ae;
+  box-shadow: 0 0 0 0 #f582ae, 0 0 0 0 #f582ae;
+}
+label .menu-nigth {
+  background: #7f5af0;
+  box-shadow: 0 0 0 0 #7f5af0, 0 0 0 0 #7f5af0;
+}
+
 
 label ul {
   z-index: 200;
@@ -151,8 +167,16 @@ label a {
 } 
 
 .btnMenu{
-  background-color: #00bcd4;
+  background-color: #7f5af0;
   border-width: 0px;
+}
+        
+.btnMenu-day{
+  background-color: #f582ae;
+}
+        
+.btnMenu-nigth{
+  background-color: #7f5af0;
 }
         
   

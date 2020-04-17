@@ -6,8 +6,10 @@ import { ServiceComponent } from './vistas/service/service.component';
 import { BlogComponent } from './vistas/blog/blog.component';
 import { AboutmeComponent } from './vistas/aboutme/aboutme.component';
 import { ContactComponent } from './vistas/contact/contact.component';
-
-
+import { PianoKeyboardComponent } from './componentes/piano-keyboard/piano-keyboard.component';
+// children: [
+//   {path: 'pianokey', component: PianoKeyboardComponent}
+// ]
 
 const app_routes: Routes = [
   {

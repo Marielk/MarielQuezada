@@ -1,6 +1,6 @@
 
   .main{
-    background-color: #020299;
+    background-color: #242629;
     /* height: 1000px; */
     display: list-item;
     color: #ffffff;
@@ -9,12 +9,12 @@
 
   .imgMain{
     /* height: 70%;
-    margin-left: 50%;
     margin-top: 5%; */
-    height: 95%;
+    height: 36%;
     margin-left: 50%;
+    margin-right: 15%;
     margin-top: 5%;
-    width: 155%;
+    /* width: 155%; */
 
   }
   .title{
@@ -44,24 +44,58 @@
     margin-top: 35%;
   }
 
-@media only screen and (max-width: 765px) {
+  @media only screen and (min-width: 320px) {
+    .imgMain{
+      height: 26%;
+      margin-right: 0%;
+    }
+    .text{
+      width: 100%;
+    }
+    .title{
+      margin-left: -15%;
+      font-size: xx-large;
+    }
+    .subtitle{
+      margin-left: 8%;
+    }
+  }
+  @media only screen and (min-width: 375px) {
+    .imgMain{
+      height: 31%;
+      margin-right: 0%;
+    }
+    .title{
+      margin-left: 0%;
+    }
+  }
+  @media only screen and (min-width: 425px) {
+    .imgMain{
+      height: 36%;
+      margin-right: 0%;
+    }
+    .title{
+      margin-left: 4%;
+    }
+  }
+@media only screen and (min-width: 765px) {
   /* For mobile phones: */
   [class*="col-"] {
       width: 100%;
   }
 
-
-  .imgMain{
+  
+  /* .imgMain{
     /* height: 70%; */
     /* margin-left: 0%;
-    margin-top: 5%; */
+    margin-top: 5%; 
     margin-top: 5%;
     margin-left: 0%;
     width: 348px;
     margin-right: 5%;
     height: 350px;
     margin-bottom: 40%;
-}
+} */
     /* transform: translateY(-100%); */
 
   
@@ -93,8 +127,8 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-	.imgMain{
+@media only screen and (min-width: 768px) {
+	/* .imgMain{
     margin-top: 5%;
     margin-left: 5%;
     width: 348px;
@@ -102,11 +136,16 @@
     height: 350px;
     margin-bottom: 40%;
 }
-    
+     */
     /* height: 70%; */
     /* height: 70%;
     transform: translateY(-100%); */
 
+    .imgMain{
+     height: 26%;
+     margin-left: 0%;
+     margin-right: 0%;
+    }
   
 
   .imgContainer{
@@ -115,7 +154,7 @@
   .title{
     
     margin-top: 8%;
-    margin-left: 5%;
+    margin-left: -13%;
     font-size: xx-large;
     font-family: 'PT Serif', serif;
  
@@ -123,13 +162,13 @@
   .subtitle{
 
     margin-top: -2%;
-    margin-left: 20%;
+    margin-left: 7%;
     font-size: medium;
     font-family: 'ABeeZee', sans-serif;
     
   }
   .text{
-    margin-top: 15%;
+    margin-top: 0%;
     /* width: 70%; */
     text-align: justify;
     margin-left: 5%;
@@ -137,5 +176,66 @@
     padding-right: 10%;
     font-family: 'ABeeZee', sans-serif;
     
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+
+  .imgMain{
+    height: 40%;
+      margin-left: 0%;
+      margin-right: 13%;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  .imgMain{
+    height: 50%;
+  }
+
+  .title{
+    margin-left: -10%;
+    font-size: -webkit-xxx-large;
+  }
+}
+@media only screen and (min-width: 1440px) {
+
+  .imgMain{
+    height: 50%;
+  }
+
+  .title{
+    margin-left: -2%;
+    font-size: 5em;
+  }
+
+  .subtitle{
+    font-size: 2em;
+  }
+
+  .text{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+
+  .imgMain{
+    height: 70%;
+  }
+
+  .title{
+    margin-left: -2%;
+    font-size: 6em;
+  }
+
+  .subtitle{
+    font-size: 4em;
+  }
+
+  .text{
+    font-size: 2em;
   }
 }

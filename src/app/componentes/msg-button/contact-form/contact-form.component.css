@@ -7,13 +7,23 @@ label {
 }
 
 /* modal estilo */
-.btnEnviar{
-  background-color: #ec407a;
+.btnEnviar-day{
+  background-color: #f582ae;
+  color: #001858;
+}
+.btnEnviar-nigth{
+  background-color: #7f5af0;
+  color: white;
 }
 
 .btnModal{
   font-family: 'PT Serif', serif;
 }
-.btnCancel{
-  background-color: #0086c3;
+.btnCancel-day{
+  background-color: #fef6e4;
+  color: #001858;
+}
+.btnCancel-nigth{
+  background-color: #72757e;
+  color: #001858;
 }

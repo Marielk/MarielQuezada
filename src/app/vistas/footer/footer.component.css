@@ -4,12 +4,26 @@
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background-color: #5533cb;
+  
   text-align: center;
   font-size: x-large;
 }
 
 .footer-icon{
-  color: #62ebff;
   margin-left: 5%;
+}
+
+.footer-day{
+  background-color: #fffffe;
+}
+
+.footer-nigth{
+  background-color:  #16161a;
+}
+
+.footer-icon-day{
+  color:#f582ae;
+}
+.footer-icon-nigth{
+  color: #7f5af0;
 }

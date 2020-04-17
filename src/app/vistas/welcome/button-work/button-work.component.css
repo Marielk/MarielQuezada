@@ -21,7 +21,6 @@ a {
 	text-transform: uppercase;
   text-decoration: none;
 	letter-spacing: 5px;
-	color: #000000;
   border: none;
   border-radius: 20px;
   font-family: 'PT Serif', serif;
@@ -39,9 +38,18 @@ a {
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
-	background:#00bcd4;
+	
 	/* @include fade-transition(background); */
 
+}
+
+a .day{
+	background:#f582ae;
+	color: #001858;
+}
+a .nigth{
+	background:#7f5af0;
+	color: white;
 }
 
 a {
@@ -49,9 +57,14 @@ a {
 	margin-left: 40%;
 }
     a:hover {
-      background: #62efff;
+      background: #7f5af0;
     }
-
+		a .day:hover {
+			background:#8bd3dd;
+		}
+		a .nigth:hover {
+			background:#7f5af0;
+		}
 
 i {
 /*   positioning */
@@ -67,7 +80,7 @@ i {
 		background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
 		background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* IE10+ */
 		background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b892ff', endColorstr='#b892ff',GradientType=1 ); /* IE6-9 */
     
 /*  forming the shine element
     play around with the width, skew and gradient to get different effects
@@ -141,17 +154,56 @@ i {
 	80% {opacity: 0.0}
 	100% { left: 82%}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) {
 	a {
-		margin-top: 20%;
+		padding: 13px;
+    width: 80%;
 		margin-left: 50%;
+	}
+}
+@media only screen and (min-width: 375px) {
+	a {
+		padding: 10px;
 		
 	}
 }
-
-@media only screen and (max-width: 765px) {
+@media only screen and (min-width: 425px) {
 	a {
-		margin-top: 25%;
+		padding: 20px;
+		
+	}
+}
+@media only screen and (min-width: 768px) {
+	a {
+		margin-top: 10%;
 		margin-left: 50%;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 765px) {
+	a {
+		margin-top: 10%;
+		margin-left: 50%;
+	}
+}
+@media only screen and (min-width: 1020px) {
+	a {
+		margin-top: 15%;
+		margin-left: 50%;
+	}
+}
+@media only screen and (min-width: 1440px) {
+	a {
+		margin-top: 10%;
+		margin-left: 50%;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+
+	a {
+		font-size: 2em;
+		padding: 45px;
 	}
 }
