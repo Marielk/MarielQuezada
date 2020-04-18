@@ -2,13 +2,13 @@
 <!-- <a class="nav-link m-auto" routerLink="pianokey" href="#">Ir al proyecto de piano</a> -->
 
 <div class="cards">
-  <div class="card col-sm-12 col-lg-3"  data-aos="fade-down">
+  <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'"   data-aos="fade-down">
     <div class="card-header bg1">
       <img class="card-image" src="../../../assets/img/planting.png" alt="Share" />
     </div>
     <div class="card-content">
       <h2 class="card-title title">"Planting Friends"</h2>
-      <p class="card-text text"> Red social enfocada en el cuidado del medio   ambiente.
+      <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'"> Red social enfocada en el cuidado del medio   ambiente.
         El objetivo principal de esta aplicación es que aquellas personas que tengan interés en temas medioambientales puedan conocer a más gente que comparta sus mismos intereses, y se puedan generar instancias para compartir información</p>
         <span>
             <i class="fab fa-angular footerIcon"></i>
@@ -18,59 +18,13 @@
           <!-- iconos de tecnologia -->
         </span>
         <div class="row">
-          <a class="btn btn-primary btnLinks" href="https://github.com/Marielk/planting-friends" role="button" target="_blank">
+          <a [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'"  href="https://github.com/Marielk/planting-friends" role="button" target="_blank">
             Ver Código
           </a>
-          <a class="btn btn-primary btnLinks" href="https://plantingfriends.firebaseapp.com/" role="button" target="_blank">
+          <a  [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" href="https://plantingfriends.firebaseapp.com/" role="button" target="_blank">
             Demo
           </a>
         </div>
     </div>
   </div>
-
-  <div class="card col-sm-12 col-lg-3"  data-aos="fade-down">
-    <div class="card-header bg2">
-      <img class="card-image" src="../../../assets/img/markdown.png" alt="Share" />
-    </div>
-    <div class="card-content">
-      <h2 class="card-title title">"Markdown"</h2>
-      <p class="card-text text">Esta es una libreria de NodeJS que contiene un extractor de links, recibe una ruta de archivo en formato “.md” y retorna por medio de la consola un listado de todos los enlaces que contiene el proyecto, así como la línea del archivo donde se encuentra alojado. Además si se añade la opción de validar, puede comprobar que los enlaces están funcionando o de lo contrario están “rotos”.</p>
-      <span>
-        <i class="fab fa-angular footerIcon"></i>
-        <i class="fas fa-terminal footerIcon"></i>
-        <i class="fas fa-file-upload footerIcon"></i>
-        <img src="../../../assets/img/firebase.png" alt="icono firebase" class="fireIcon">
-    </span>
-    <div class="row">
-      <a class="btn btn-primary btnLinks" href="https://github.com/Marielk/scl-2018-01-FE-markdown" role="button" target="_blank">
-          Ver Código
-        </a>
-    </div>
-    </div>
-  </div>
-
-  <div class="card col-sm-12 col-lg-3"  data-aos="fade-down">
-    <div class="card-header bg3">
-      <img class="card-image" src="../../../assets/img/if.png" alt="Share" />
-    </div>
-    <div class="card-content">
-      <h2 class="card-title title">"If Visitor"</h2>
-      <p class="card-text text"> En este proyecto la empresa IF blanco coworking ha decidido reinventar su proceso de registro de visitantes. El problema es que su actual proceso de registro es en una planilla Excel, pero cuando no está el notebook es en lápiz y papel. Este proceso de registro no da mucha información y seguridad sobre quienes son los que visitan iF Blanco, si son clientes (arriendo espacio) o visitantes.</p>
-      <span>
-        <i class="fab fa-js-square footerIcon"></i>
-        <i class="fas fa-terminal footerIcon"></i>
-        <img src="../../../assets/img/firebase.png" alt="icono firebase" class="fireIcon">
-      
-        </span>
-        <div class="row">
-          <a class="btn btn-primary btnLinks" href="https://github.com/Marielk/scl-2018-01-ProyectoFinalCore" role="button" target="_blank">
-              Ver Código
-            </a>
-            <a class="btn btn-primary btnLinks" href="https://if-visitor.firebaseapp.com/" role="button" target="_blank">
-              Demo
-            </a>
-        </div>
-    </div>
-  </div>
-
 </div>   

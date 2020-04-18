@@ -9,17 +9,20 @@ import {
 import { localStorageSync } from 'ngrx-store-localstorage';
 // import { environment } from '../../../environments/environment';
 import { languageReducer } from './language.reducer';
+import { modeReducer } from './mode.reducer';
 
 
 export const FEATURE_NAME = 'settings';
-const STORE_KEYS_TO_PERSIST = ['language'];
+const STORE_KEYS_TO_PERSIST = ['language', 'mode'];
 
 export interface State {
   language: string;
+  mode: string;
 }
 
 export const reducers: ActionReducerMap<State> = {
-  language: languageReducer
+  language: languageReducer,
+  mode: modeReducer
 };
 
 export const getSettingsState = createFeatureSelector<State>(FEATURE_NAME);

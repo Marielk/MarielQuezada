@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { State } from 'src/app/state_management/reducers';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  mode = 'nigth';
+  constructor(private store: Store<State>) { }
 
   ngOnInit() {
+    this.suscribeToMode();
+  }
+
+  suscribeToMode() {
+    this.store.select('mode').subscribe((mode) => {
+      this.mode = mode;
+    });
   }
 
 }

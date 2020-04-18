@@ -1,6 +1,6 @@
 <div id="container-floating">
-  <div id="floating-button" data-toggle="modal" data-target="#exampleModal" data-placement="left" data-original-title="Create" >
-    <p class="plus"><i class="far fa-comment-dots"></i></p>
+  <div id="floating-button" [ngClass]="mode === 'nigth' ? 'floating-button-nigth' : 'floating-button-day'" data-toggle="modal" data-target="#exampleModal" data-placement="left" data-original-title="Create" >
+    <p [ngClass]="mode === 'nigth' ? 'plus plus-nigth' : 'plus plus-day'"><i class="far fa-comment-dots"></i></p>
     <img class="edit" src="https://ssl.gstatic.com/bt/C3341AA7A1A076756462EE2E5CD71C11/1x/bt_compose2_1x.png">
   </div>
 </div>
@@ -9,13 +9,13 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div [ngClass]="mode === 'nigth' ? 'modal-header modal-header-nigth' : 'modal-header modal-header-day'">
           <h5 class="modal-title" id="exampleModalLabel">Hablemos!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
+        <div [ngClass]="mode === 'nigth' ? 'modal-body modal-body-nigth' : 'modal-body modal-body-day'">
           <app-contact-form></app-contact-form>   
         </div>
         <!-- <div class="modal-footer">

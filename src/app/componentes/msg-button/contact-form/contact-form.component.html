@@ -24,6 +24,6 @@
   </div>
 </form>
 <div class="modal-footer d-flex justify-space-between">
-  <button type="button" class="btn btn-secondary btnCancel btnModal" data-dismiss="modal">Cancelar</button>
-  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" class="btn btn-primary btnEnviar btnModal" data-dismiss="modal">Enviar</button>
+  <button type="button"[ngClass]="mode === 'nigth' ? 'btn btn-secondary btnCancel-nigth btnModal' : 'btn btn-secondary btnCancel-day btnModal'" data-dismiss="modal">Cancelar</button>
+  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnEnviar-nigth btnModal' : 'btn btn-primary btnEnviar-day btnModal'" data-dismiss="modal">Enviar</button>
 </div>

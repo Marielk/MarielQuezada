@@ -43,11 +43,11 @@ a {
 
 }
 
-a .day{
+a.day{
 	background:#f582ae;
 	color: #001858;
 }
-a .nigth{
+a.nigth{
 	background:#7f5af0;
 	color: white;
 }
@@ -59,10 +59,10 @@ a {
     a:hover {
       background: #7f5af0;
     }
-		a .day:hover {
+		a.day:hover {
 			background:#8bd3dd;
 		}
-		a .nigth:hover {
+		a.nigth:hover {
 			background:#7f5af0;
 		}
 

@@ -5,12 +5,12 @@
       <p class="title">Contactame</p>
       <p class="text">Puedes enviarme un email con tus consultas o si lo prefieres puedes llamarme o contactarte a mi +wsp, de cualquier manera contestare tu mensaje lo antes posible. </p>
       <div class="row">
-        <button class="btn btnContact" disabled>
+        <button [ngClass]="mode === 'nigth' ? 'btn btnContact btnContact-nigth' : 'btn btnContact btnContact-day'" disabled>
           <i class="far fa-envelope"></i> marielk.@gmail.com
         </button>
       </div>
       <div class="row">
-        <button class="btn btnContact" disabled>
+        <button [ngClass]="mode === 'nigth' ? 'btn btnContact btnContact-nigth' : 'btn btnContact btnContact-day'" disabled>
           <i class="fab fa-whatsapp"></i>(+569)48628194
         </button>
       </div>

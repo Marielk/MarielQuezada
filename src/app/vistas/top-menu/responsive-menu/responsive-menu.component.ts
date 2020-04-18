@@ -15,11 +15,13 @@ export class ResponsiveMenuComponent implements OnInit {
   form: any = document.getElementsByName('form');
   input: any;
   buton: HTMLButtonElement;
+  mode = 'nigth';
   constructor( private translate: TranslateService, private store: Store<State>  ) {
   }
 
   ngOnInit() {
     this.translateDefault();
+    this.suscribeToMode();
   }
 
   translateDefault() {
@@ -86,5 +88,10 @@ export class ResponsiveMenuComponent implements OnInit {
      // console.log(this.input.checked);
   }
 
+  suscribeToMode() {
+    this.store.select('mode').subscribe((mode) => {
+      this.mode = mode;
+    });
+  }
   
 }

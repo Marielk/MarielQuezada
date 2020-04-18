@@ -1,11 +1,11 @@
-<footer class="footer">
+<footer [ngClass]="mode === 'nigth' ? 'footer footer-nigth' : 'footer footer-day'" >
     <div class="container">
       <span> 
         <a href="https://www.linkedin.com/in/mariel-quezada-gallardo" target="_blank">
-          <i class="fab fa-linkedin footer-icon"></i>
+          <i [ngClass]="mode === 'nigth' ? 'fab fa-linkedin footer-icon footer-icon-nigth' : 'fab fa-linkedin footer-icon footer-icon-day'"></i>
         </a>
         <a href="https://github.com/Marielk" target="_blank">
-          <i class="fab fa-github-square footer-icon"></i>
+          <i [ngClass]="mode === 'nigth' ? 'fab fa-github-square footer-icon footer-icon-nigth' : 'fab fa-github-square footer-icon footer-icon-day'"></i>
         </a>
       </span>
     </div>

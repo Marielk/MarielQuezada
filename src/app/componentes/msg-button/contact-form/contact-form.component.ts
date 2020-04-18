@@ -6,7 +6,8 @@ import { AngularFireStorage } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 import * as firebase from 'firebase';
 import { ContactFormInterface } from '../../../models/contactFormInterface';
-
+import { Store } from '@ngrx/store';
+import { State } from 'src/app/state_management/reducers';
 
 @Component({
   selector: 'app-contact-form',
@@ -27,9 +28,18 @@ export class ContactFormComponent implements OnInit {
     contact: ['', Validators.required],
     mesage: ['', Validators.required]
   });
-  constructor(private fb: FormBuilder, private sendMesageService: MesageService, private storage: AngularFireStorage ) { }
+  mode = 'nigth';
+  constructor(private fb: FormBuilder, private sendMesageService: MesageService, 
+    private storage: AngularFireStorage, private store: Store<State> ) { }
 
   ngOnInit() {
+    this.suscribeToMode();
+  }
+
+  suscribeToMode() {
+    this.store.select('mode').subscribe((mode) => {
+      this.mode = mode;
+    });
   }
 
   onSubmit() {
