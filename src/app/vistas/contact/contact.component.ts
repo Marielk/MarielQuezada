@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Store } from '@ngrx/store';
 import { State } from 'src/app/state_management/reducers';
 
@@ -9,10 +10,17 @@ import { State } from 'src/app/state_management/reducers';
 })
 export class ContactComponent implements OnInit {
   mode = 'nigth';
-  constructor(private store: Store<State>) { }
+  constructor(private store: Store<State>, private translate: TranslateService) { }
 
   ngOnInit() {
+    this.translation();
     this.suscribeToMode();
+  }
+
+  translation() {
+    const storeSaved = this.store.select('language').subscribe((lang: string) => {
+      this.translate.use(lang);
+    });
   }
 
   suscribeToMode() {

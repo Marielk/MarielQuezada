@@ -1,21 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import * as Cookie from 'js-cookie';
 import { Store } from '@ngrx/store';
 import { State } from 'src/app/state_management/reducers';
 import { Changelanguage } from 'src/app/state_management/reducers/language.actions';
+import { ChangeMode } from 'src/app/state_management/reducers/mode.actions';
 
 @Component({
   selector: 'app-responsive-menu',
   templateUrl: './responsive-menu.component.html',
   styleUrls: ['./responsive-menu.component.css'],
 })
-export class ResponsiveMenuComponent implements OnInit {
+export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
   form: any = document.getElementsByName('form');
   input: any;
   buton: HTMLButtonElement;
   mode = 'nigth';
+  lang = '';
+  modeColor = '';
   constructor( private translate: TranslateService, private store: Store<State>  ) {
   }
 
@@ -23,6 +26,47 @@ export class ResponsiveMenuComponent implements OnInit {
     this.translateDefault();
     this.suscribeToMode();
   }
+
+  ngAfterViewChecked() {
+    this.activeSwitch();
+  }
+
+
+  activeSwitch() {
+    // debugger
+    const switchInput = document.getElementById('switchMovile') as HTMLInputElement;
+    switchInput.addEventListener('click', () => {
+      const checked = switchInput.checked;
+      if (checked === true) {
+        const action = new ChangeMode('day');
+        this.store.dispatch(action);
+        Cookie.set('mode', 'day');
+        // this.mode = 'día';
+      } else {
+        const action = new ChangeMode('nigth');
+        Cookie.set('mode', 'nigth');
+        this.store.dispatch(action);
+        // this.mode = 'noche';
+      }
+      this.translateMode();
+    });
+  }
+
+  translateMode() {
+    const mode = Cookie.get('mode');
+    const lang = Cookie.get('lang');
+    if (mode === 'day' && lang === 'es') {
+      this.mode = 'Día';
+    } else if (mode === 'nigth' && lang === 'es') {
+      this.mode = 'Noche';
+    } else if (mode === 'day' && lang === 'en') {
+      this.mode = 'Day';
+    } else if (mode === 'nigth' && lang === 'en') {
+      this.mode = 'Nigth';
+    }
+    // console.log(mode, lang, this.mode);
+  }
+
 
   translateDefault() {
     const isSavedLang = this.checkCookieLang();
@@ -33,6 +77,7 @@ export class ResponsiveMenuComponent implements OnInit {
       const action = new Changelanguage('es');
       this.store.dispatch(action);
       this.translate.use('es');
+      this.lang = 'es';
     }
   }
 
@@ -54,17 +99,20 @@ export class ResponsiveMenuComponent implements OnInit {
         const action = new Changelanguage('es');
         this.store.dispatch(action);
         this.translate.use('es');
+        this.lang = 'es';
       } else {
         Cookie.set('lang', 'en');
         const action = new Changelanguage('en');
         this.store.dispatch(action);
         this.translate.use('en');
+        this.lang = 'en';
       }
     } else {
       Cookie.set('lang', 'en');
       const action = new Changelanguage('en');
       this.store.dispatch(action);
       this.translate.use('en');
+      this.lang = 'en';
     }
   }
 
@@ -91,6 +139,17 @@ export class ResponsiveMenuComponent implements OnInit {
   suscribeToMode() {
     this.store.select('mode').subscribe((mode) => {
       this.mode = mode;
+      this.modeColor = mode;
+      if (mode === 'day') {
+        // this.mode = 'día';
+        const action = new ChangeMode('day');
+        this.store.dispatch(action);
+        // $('input[type="checkbox"]').attr('checked', 'checked');
+        const switchInput = document.getElementById('switchMovile') as HTMLInputElement;
+        switchInput.checked = true;
+        this.translateMode();
+        // switchInput.classList.add('checked');
+      } 
     });
   }
   

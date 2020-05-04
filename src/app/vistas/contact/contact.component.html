@@ -1,9 +1,9 @@
 <div class="containter-fluid">
   <div class="row">
     <div class="col-sm-6 contactInfo">
-      <p class="subtitle">-Es hora de crear algo increible-</p>
-      <p class="title">Contactame</p>
-      <p class="text">Puedes enviarme un email con tus consultas o si lo prefieres puedes llamarme o contactarte a mi +wsp, de cualquier manera contestare tu mensaje lo antes posible. </p>
+      <p class="subtitle" [translate]="'contact.title'"></p>
+      <p class="title" [translate]="'contact.contactme'"></p>
+      <p class="text" [translate]="'contact.contactotxt'"></p>
       <div class="row">
         <button [ngClass]="mode === 'nigth' ? 'btn btnContact btnContact-nigth' : 'btn btnContact btnContact-day'" disabled>
           <i class="far fa-envelope"></i> marielk.@gmail.com

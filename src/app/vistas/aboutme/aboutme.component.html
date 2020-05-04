@@ -1,44 +1,33 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row pb-4">
       <div class="col-sm-12">
-          <p class="title top">Qué digo yo de mí?</p>
+          <p class="title top" [translate]="'aboutme.title'"></p>
         </div>
     <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-8- col-lg-6' : 'card card-day col-sm-8- col-lg-6'">
       <div class="card-body">
-        <p [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText full' : 'card-text card-text-day cardText full'" >Soy una persona muy apasionada por todo lo que hago. Mi motivación por aprender me mantiene en constante búsqueda de nuevos desafíos. 
-          Me gusta ponerme metas y trabajar hasta alcanzarlas, sin importar el tiempo que me tome. Soy consciente de que la única forma de avanzar es un paso a la vez. 
-          Desde niña estuve desarrollando mis talentos artísticos como el teatro y la pintura hasta que se volvió parte de mí.
-          Estudie Animación Digital en DuocUC Viña del Mar donde pude aprender muchos conceptos de diseño y manejar programas de edición. Luego de eso me traslade a Santiago, donde ingrese a la universidad de las Américas a continuar mis estudios de Animación. Por todo esto desarrolle una capacidad de adaptarse a ritmos de trabajo intenso con fechas de entrega impostergables y la tolerancia a la critica. 
-          Actualmente practico la pintura digital y la ilustración tradicional. Me gusta fabricar cosas a mano como peluches y muñecas que vendo en mi tienda virtual o ferias de arte. Soy también una lectora empedernida y fan del cine. Me gusta la naturaleza, soy ecologista, vegetariana, amante de los gatos y de andar en bicicleta. </p>
+        <p [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText full' : 'card-text card-text-day cardText full'" [translate]="'aboutme.p1'"></p>
          
-          <div [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText responsive' : 'card-text card-text-day cardText responsive'">
-            Soy una persona muy apasionada por todo lo que hago. Mi motivación por aprender me mantiene en constante búsqueda de nuevos desafíos. 
-            Me gusta ponerme metas y trabajar hasta alcanzarlas, sin importar el tiempo que me tome. Soy consciente de que la única forma de avanzar es un paso a la vez. 
+          <div [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText responsive' : 'card-text card-text-day cardText responsive'" [translate]="'aboutme.p2'">
             </div>
-            <a class="btn btn-primary responsive verMas" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-               Ver más
+            <a class="btn btn-primary responsive verMas" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" [translate]="'aboutme.more'">
             </a>
-            <a href="../../../assets/docs/Curriculum_Mariel_2018.pdf" download="Curriculum_Mariel_2018.pdf" target="_blank" class="btn btn-primary btn-lg responsive cvR"><i class="fas fa-download"></i> CV</a> 
+            <a [href]="lang === 'es' ? '../../../assets/docs/marielquezada_es_cv_2020.pdf': '../../../assets/docs/marielquezada_en_cv_2020.pdf'" [download]="lang === 'es' ? 'marielquezada_es_cv_2020.pdf': 'marielquezada_en_cv_2020.pdf'" target="_blank" class="btn btn-primary btn-lg responsive cvR"><i class="fas fa-download"></i> CV</a> 
             <div class="collapse" id="collapseExample">
-                <div class="card innerResponsive">
-                    Desde niña estuve desarrollando mis talentos artísticos como el teatro y la pintura hasta que se volvió parte de mí.
-                    Estudie Animación Digital en DuocUC Viña del Mar donde pude aprender muchos conceptos de diseño y manejar programas de edición. Luego de eso me traslade a Santiago, donde ingrese a la universidad de las Américas a continuar mis estudios de Animación. Por todo esto desarrolle una capacidad de adaptarse a ritmos de trabajo intenso con fechas de entrega impostergables y la tolerancia a la critica. 
-                    Actualmente practico la pintura digital y la ilustración tradicional. Me gusta fabricar cosas a mano como peluches y muñecas que vendo en mi tienda virtual o ferias de arte. Soy también una lectora empedernida y fan del cine. Me gusta la naturaleza, soy ecologista, vegetariana, amante de los gatos y de andar en bicicleta. 
+                <div class="card innerResponsive" [translate]="'aboutme.p3'"> 
                 </div>
                   
             </div>
         <hr>
         <div class="card-footer">
           <span> 
-            <a href="https://www.instagram.com/marielk.gallardo/" target="_blank">
+            <a href="https://www.instagram.com/lavandacode/?hl=es-la" target="_blank">
               <i [ngClass]="mode === 'nigth' ? 'fab fa-instagram footerIcon footerIcon-nigth' : 'fab fa-instagram footerIcon footerIcon-day'"></i>
             </a>
-            <a href="https://www.facebook.com/mizeladulcetienda" target="_blank">
-              <i [ngClass]="mode === 'nigth' ? 'fab fa-facebook-square footerIcon footerIcon-nigth' : 'fab fa-facebook-square footerIcon footerIcon-day'"></i>
+            <a href="https://www.linkedin.com/in/mariel-quezada-gallardo" target="_blank">
+              <i [ngClass]="mode === 'nigth' ? 'fab fa-linkedin footerIcon footerIcon-nigth' : 'fab fa-linkedin footerIcon footerIcon-day'"></i>
             </a>
-            <a href="https://slack.com/intl/es/" target="_blank">
-              <i [ngClass]="mode === 'nigth' ? 'fab fa-slack footerIcon footerIcon-nigth' : 'fab fa-slack footerIcon footerIcon-day'"></i>
-              <p class="footerText">#Mariel Quezada Gallardo</p>
+            <a href="https://www.behance.net/marielkmya01db" target="_blank">
+              <i [ngClass]="mode === 'nigth' ? 'fab fa-behance-square footerIcon footerIcon-nigth' : 'fab fa-behance-square footerIcon footerIcon-day'"></i>
             </a>
           </span>
         </div>
@@ -46,7 +35,7 @@
     </div>
     <div class="col-sm-12 col-lg-6">
       <img src="../../../assets/img/foto_perfil.JPG" alt="imagen de perfil" class="profileIMG">
-      <a href="../../../assets/docs/Curriculum_Mariel_2018.pdf" download="Curriculum_Mariel_2018.pdf" target="_blank"
+      <a [href]="lang === 'es' ? '../../../assets/docs/marielquezada_es_cv_2020.pdf': '../../../assets/docs/marielquezada_en_cv_2020.pdf'" [download]="lang === 'es' ? 'marielquezada_es_cv_2020.pdf': 'marielquezada_en_cv_2020.pdf'" target="_blank"
       [ngClass]="mode === 'nigth' ? 'btn btn-primary btn-lg full cvN cvN-nigth' : 'btn btn-primary btn-lg full cvN cvN-day'">
        <i class="fas fa-download"></i> CV</a> 
     </div>

@@ -3,6 +3,11 @@ label {
   text-align: left;
   margin-bottom: .5rem;
 }
+.label {
+  display: block;
+  text-align: left;
+  margin-bottom: .5rem;
+}
 
 .formContainer{
   padding: 5%;

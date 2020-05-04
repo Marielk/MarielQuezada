@@ -6,10 +6,51 @@
     "coments": "References",
     "about": "About me",
     "contact": "Contact me",
-    "language": "Change to Spanish"
+    "language": "Change to Spanish",
+    "mode": "Mode"
   },
   "welcome":{
     "text": "I am a passionate about code and web development focus on users. Challenge me and achive the succesfull of your project",
     "button": "See my work"
+  },
+  "portfolio": {
+    "title": "What I did?",
+    "planting": "Development of a social network focused on caring for the environment. Developed in Angular v6 with authentication in firebase, database in firebase firestore and data hosting in firebase storage. The entire application is hosted on a single page which is updated as the user navigates through it, in this way the execution time is reduced and the entire flow runs almost instantaneously.",
+    "see": "See Code",
+    "braveup": "Create new web app with Angular 9 and NodeJS. Improvement of web performance. Identified and executed new user research and development UI Interfaces to achieve increase usability",
+    "hivesystem": "Developed and maintained large scale web app with Angular 8, consuming REST API, using CSS preprocessing and Test and Debug tools like Jazmin. ",
+    "Inclusive": "This app is an inclusive tourist guide for people with disabilities. We use our own database made on NodeJS with data provided by the government and the inclusive circuits association of Santiago. The application offers the guidance of a voice assistant for the blind and also the high contrast option for people with low vision.",
+    "finances": "We are developing a Web App that determinate the level of indebtedness of the user, then provides a personal plan to achieve your financial goals (like study or buy a house). We build an algorithm that allows to identify which users are in risk to fall into over indebtedness and we can help to avoid that. We can also guide the users that already are in that situation to keep forward and get out of their debts. We’re aiming to validate our idea with real users, getting to know their needs in detail and iterate our initiative in order to develop a full experience that adapts to what people really needs.",
+    "mini": "Mini Code challenges",
+    "watch": "Watch Demo",
+    "piano": "This is a simple Piano made with Angular and the Web Audio Api, you can play arround with it."
+  
+  },
+  "services":{
+    "title": "What can I do for you?",
+    "design": "Design",
+    "designtxt": "Bring to life Designer´s concept with HTML, CSS and JavaScript. Implementing responsive design for mobile devices. Made prototipes of UI components to help in the designer´s work.",
+    "build": "Build",
+    "buildtxt": "Build tools for users can see and use your website on any browser. Produce, modify and mantain web apps with UX eye. Write good quality code, clean, orderer and reusable.",
+    "funcional" : "Funcional Programing",
+    "funcionaltxt": "Help the Back-End develop, consuming and implements APIs, build databases with important information. Version controling with Git, Use the most actual tools to build reactive and functional programming. Develop and run all class of Test to improve performance and security. "
+  },
+  "aboutme":{
+    "title": "What about me?",
+    "p1": "I am a very passional person with my work. My hungry for learning keeps me motivated always looking to improve my knowledge. I like to stablish goals and work for them, no matters how longs it takes. I am aware that the only way to keep forward is one step at time. Since I was a child, i was developing a taste for art and design. I studied Digital Animation at University, there i learn about motion, design and digital softwares. I like handcraft and the traditional illustration. I love to read and watch movies. I really enjoy the nature, I am vegan vegetariana, cat lover and prefer to ride a bike.",
+    "p2": "I am a very passional person with my work. My hungry for learning keeps me motivated always looking to improve my knowledge. I like to stablish goals and work for them, no matters how longs it takes. I am aware that the only way to keep forward is one step at time. ",
+    "more": "See more",
+    "p3": "Since I was a child, i was developing a taste for art and design. I studied Digital Animation at University, there I learn about motion, design and digital softwares. I like handcraft and the traditional illustration. I love to read and watch movies. I really enjoy the nature, I am vegan, cat lover and like to ride a bike."
+  },
+  "contact": {
+    "title": "-Let´s make something amazing!!-",
+    "contactme": "Contact me",
+    "contactotxt": "You can email me or if you want you can call me, any way I will reply soon as posible.",
+    "name": "Name",
+    "company": "Company",
+    "contact": "Contact",
+    "msg": "Message",
+    "cancel": "Cancel",
+    "send": "Send"
   }
 }

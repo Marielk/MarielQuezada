@@ -32,11 +32,12 @@
               <li class="nav-item">
                 <a [ngClass]="modeColor === 'nigth' ? 'nav-link nav-link-nigth' : 'nav-link nav-link-day'" routerLink="contact" href="#" [translate]="'top_menu.contact'"></a>
               </li>
-              <li class="nav-item">
+              <li id="language_content" class="nav-item">
                 <button [ngClass]="modeColor === 'nigth' ? 'nav-link translate-btn nav-link-nigth' : 'nav-link translate-btn nav-link-day'" [translate]="'top_menu.language'" (click)="changeLanguage()"></button>
+                <img class="flag_img" [src]="lang === 'es' ? '../../../assets/img/english-language.png' : '../../../assets/img/spanish-language.png' ">
               </li>
-              <li>
-                <p class="mb-0 switch-label mr-2">Modo <span class="bold">{{mode}}</span></p>
+              <li id="nigth_mode_content">
+                <p class="mb-0 switch-label mr-2"><span class="bold">{{mode}}</span></p>
                 <label class="switch">
                   <input type="checkbox" id="switch">
                   <span class="slider round"></span>

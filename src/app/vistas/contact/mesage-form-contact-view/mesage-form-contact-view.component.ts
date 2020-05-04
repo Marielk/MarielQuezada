@@ -8,6 +8,7 @@ import * as firebase from 'firebase';
 import { ContactFormInterface } from '../../../models/contactFormInterface';
 import { Store } from '@ngrx/store';
 import { State } from 'src/app/state_management/reducers';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mesage-form-contact-view',
@@ -31,9 +32,10 @@ export class MesageFormContactViewComponent implements OnInit {
 
   mode = 'nigth';
   constructor(private fb: FormBuilder, private sendMesageService: MesageService,
-     private storage: AngularFireStorage, private store: Store<State>) { }
+     private storage: AngularFireStorage, private store: Store<State>, private translate: TranslateService) { }
 
   ngOnInit() {
+    this.translation();
     this.suscribeToMode();
   }
   onSubmit() {
@@ -46,6 +48,13 @@ export class MesageFormContactViewComponent implements OnInit {
     alert('Gracias por contactarme, te respondere a la brevedad!');
     this.contactForm.reset();
   }
+
+  translation() {
+    const storeSaved = this.store.select('language').subscribe((lang: string) => {
+      this.translate.use(lang);
+    });
+  }
+
 
   suscribeToMode() {
     this.store.select('mode').subscribe((mode) => {

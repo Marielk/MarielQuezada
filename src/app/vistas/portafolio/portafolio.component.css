@@ -7,14 +7,15 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 140px;
+  justify-content: center;
+  padding-bottom: 10%;
+	/* margin-bottom: 140px; */
 }
 .card {
 	position: relative;
-  border-radius: 1em;
+  border-radius: 10px;
   width: 160px;
-  height: 680px;
+  height: 500px;
   padding-left: 10%;
   padding-right: 6%;
 	/* size:(230px, 290px); */
@@ -50,8 +51,8 @@
     /* size:(100%, 45%); */
   }
 		.card-image {
-			height: 75%;
-      border-radius: 5%;
+			height: 100%;
+      border-radius: 2%;
 		}
 		
 	
@@ -142,6 +143,24 @@
   width: 30px;
   margin-left: 5%;
   margin-bottom: 5%;
+}
+
+/* modal estilo */
+.btnEnviar{
+  background-color: #7f5af0;
+}
+
+.btnEnviar-day{
+  background-color: #f582ae;
+  color: #001858;
+}
+.btnEnviar-nigth{
+  background-color: #7f5af0;
+  color: white;
+}
+.btnModal{
+  font-family: 'PT Serif', serif;
+  /* margin-left: 5%; */
 }
 
 @media only screen and (max-width: 768px) {

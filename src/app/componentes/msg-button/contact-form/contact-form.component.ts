@@ -8,6 +8,7 @@ import * as firebase from 'firebase';
 import { ContactFormInterface } from '../../../models/contactFormInterface';
 import { Store } from '@ngrx/store';
 import { State } from 'src/app/state_management/reducers';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
@@ -29,11 +30,20 @@ export class ContactFormComponent implements OnInit {
     mesage: ['', Validators.required]
   });
   mode = 'nigth';
+  lang = '';
   constructor(private fb: FormBuilder, private sendMesageService: MesageService, 
-    private storage: AngularFireStorage, private store: Store<State> ) { }
+    private storage: AngularFireStorage, private store: Store<State>, private translate: TranslateService ) { }
 
   ngOnInit() {
+    this.translation();
     this.suscribeToMode();
+  }
+
+  translation() {
+    const storeSaved = this.store.select('language').subscribe((lang: string) => {
+      this.translate.use(lang);
+      this.lang = lang;
+    });
   }
 
   suscribeToMode() {
@@ -50,7 +60,11 @@ export class ContactFormComponent implements OnInit {
     this.mesage.contact = this.contactForm.value.contact;
     this.mesage.mesage = this.contactForm.value.mesage;
     this.sendMesageService.sendMesage(this.mesage);
-    alert('Gracias por contactarme, te respondere a la brevedad!');
+    if (this.lang === 'es') {
+      alert('Gracias por contactarme, te respondere a la brevedad!');
+    } else if (this.lang === 'en') {
+      alert('Thank you for contact me, I will reply soon as posible!');
+    }
   }
 
 }

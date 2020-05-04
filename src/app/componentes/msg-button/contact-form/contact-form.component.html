@@ -1,29 +1,28 @@
 <form [formGroup]="contactForm">
   <div class="form-group">
-
-    <label>
-      Nombre:
+    <p class="label" [translate]="'contact.name'"></p>
+    <label> 
       <input class="form-control" type="text" formControlName="name" required>
     </label>
-  
+
+    <p class="label" [translate]="'contact.company'"></p>
     <label>
-      Empresa:
       <input class="form-control" type="text" formControlName="company" required>
     </label>
-  
+
+    <p class="label" [translate]="'contact.contact'"></p>
     <label>
-      Contacto:
       <input class="form-control" type="text" formControlName="contact" required>
     </label>
   
+    <p class="label" [translate]="'contact.msg'"></p>
     <label>
-      Mensaje:
       <textarea class="form-control" type="text" formControlName="mesage" required></textarea>
     </label>
     
   </div>
 </form>
 <div class="modal-footer d-flex justify-space-between">
-  <button type="button"[ngClass]="mode === 'nigth' ? 'btn btn-secondary btnCancel-nigth btnModal' : 'btn btn-secondary btnCancel-day btnModal'" data-dismiss="modal">Cancelar</button>
-  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnEnviar-nigth btnModal' : 'btn btn-primary btnEnviar-day btnModal'" data-dismiss="modal">Enviar</button>
+  <button type="button"[ngClass]="mode === 'nigth' ? 'btn btn-secondary btnCancel-nigth btnModal' : 'btn btn-secondary btnCancel-day btnModal'" data-dismiss="modal" [translate]="'contact.cancel'"></button>
+  <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnEnviar-nigth btnModal' : 'btn btn-primary btnEnviar-day btnModal'" data-dismiss="modal" [translate]="'contact.send'"></button>
 </div>

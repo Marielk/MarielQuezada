@@ -2,31 +2,31 @@
     <div class="form-group formContainer">
       <div class="row">
         <div class="clas col-sm-12">
+          <p class="label" [translate]="'contact.name'"></p>
           <label>
-            Nombre:
             <input class="form-control" type="text" formControlName="name" required>
           </label>
         
-          <label>
-            Empresa:
+          <p class="label" [translate]="'contact.company'"></p>
+          <label >
             <input class="form-control" type="text" formControlName="company" required>
           </label>
         
-          <label>
-            Contacto:
+          <p class="label" [translate]="'contact.contact'"></p>
+          <label >
             <input class="form-control" type="text" formControlName="contact" required>
           </label>
         
-          <label>
-            Mensaje:
+          <p class="label" [translate]="'contact.msg'"></p>
+          <label >
             <textarea class="form-control" type="text" formControlName="mesage" required></textarea>
           </label>
         </div>
       </div>
       <div class="row ">
         <div class="col-sm-12 d-flex justify-content-between">
-          <button type="button" class="btn btn-secondary btnCancel btnModal" (click)="cancel()">Cancelar</button>
-          <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnEnviar-nigth btnModal' : 'btn btn-primary btnEnviar-day btnModal'">Enviar</button>
+          <button type="button" class="btn btn-secondary btnCancel btnModal" (click)="cancel()" [translate]="'contact.cancel'"></button>
+          <button (click)="onSubmit()" type="submit" [disabled]="!contactForm.valid" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnEnviar-nigth btnModal' : 'btn btn-primary btnEnviar-day btnModal'" [translate]="'contact.send'"></button>
         </div>
       </div>
     </div>

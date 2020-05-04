@@ -93,7 +93,8 @@
   width: 26px;
   left: 4px;
   bottom: 2px;
-  background-color: white;
+  background-image: url('../../../assets/img/moon2.png');
+  background-size: contain;
   /* border: 1px solid white; */
   -webkit-transition: .4s;
   transition: .4s;
@@ -112,7 +113,8 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
-  background-color: yellow;
+  background-image: url('../../../assets/img/sun.png');
+  background-size: contain;
 }
 
 /* Rounded sliders */
@@ -125,21 +127,44 @@ input:checked + .slider:before {
   
 }
 
-      @media only screen and (max-width: 768px) {
-        .cBtn{
-          float: right;
-        }
-        .logoResponsive{
-          display: inline-block;
-          width: 130px;
-        }
-        #logo{
-          display: none;
-        }
-        #navbarNav{
-          display: none;
-        }
-        .responsiveMenu{
+#nigth_mode_content{
+  display: inline-flex;
+  align-items: center;
+  font-family: initial;
+  font-size: inherit;
+  position: relative;
+  left: 20px;
+  top: -2px;
+}
+
+#language_content{
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 25%;
+  left: 10px;
+  top: -2px;
+}
+
+.flag_img{
+  width: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .cBtn{
+    float: right;
+  }
+  .logoResponsive{
+    display: inline-block;
+    width: 130px;
+  }
+  #logo{
+    display: none;
+  }
+  #navbarNav{
+    display: none;
+  }
+  .responsiveMenu{
           display: inline-block;
         }
       }

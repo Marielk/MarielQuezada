@@ -2,22 +2,22 @@
  <label>
    <form  name="form">
      <input  name="check" (click)="enableButtons()" type="checkbox"> 
-     <span class="menu">
+     <span [ngClass]="modeColor === 'nigth' ? 'menu menu-nigth' : 'menu menu-day'">
        <span class="hamburger"></span>
      </span>
      <ul>
        <li>
-         <button id="btn1"  class="btnMenu" disabled (click)= "validate()">
+         <button id="btn1"  [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" disabled (click)= "validate()">
            <a routerLink="" [translate]="'top_menu.home'"></a>
          </button>
        </li>
        <li>
-          <button id="btn2"  class="btnMenu" disabled (click)="validate()">
+          <button id="btn2"  [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" disabled (click)="validate()">
             <a routerLink="portafolio" href="#" [translate]="'top_menu.works'"></a>
           </button>
        </li>
        <li>
-          <button id="btn3" class="btnMenu" disabled (click)="validate()">
+          <button id="btn3" [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" disabled (click)="validate()">
             <a routerLink="service" [translate]="'top_menu.services'"></a>
           </button>
        </li>
@@ -27,16 +27,24 @@
         </button>
        </li> -->
        <li>
-        <button id="btn5" class="btnMenu" disabled (click)="validate()">
+        <button id="btn5" [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" disabled (click)="validate()">
           <a routerLink="aboutme" [translate]="'top_menu.about'"></a>
         </button>
        </li>
        <li>
-        <button id="btn6" class="btnMenu" disabled (click)="validate()">
+        <button id="btn6" [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" disabled (click)="validate()">
           <a routerLink="contact" [translate]="'top_menu.contact'"></a>
         </button>
-        <button id="btn7" class="btnMenu" [translate]="'top_menu.language'" (click)="changeLanguage()"></button>
-       </li>
+        <button id="btn7" [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" [translate]="'top_menu.language'" (click)="changeLanguage()"></button>
+        <img class="flag_img" [src]="lang === 'es' ? '../../../../assets/img/english-language.png' : '../../../../assets/img/spanish-language.png' ">
+      </li>
+      <li id="nigth_mode_content">
+        <p class="mb-0 switch-label mr-2"><span [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'">{{mode}}</span></p>
+        <label class="switch">
+          <input type="checkbox" id="switchMovile">
+          <span class="slider round"></span>
+        </label>
+      </li>
      </ul>
    </form>
 </label>

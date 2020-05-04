@@ -6,10 +6,52 @@
     "coments": "Referencias",
     "about": "Sobre mí",
     "contact": "Contacto",
-    "language": "Cambiar a Inglés"
+    "language": "Cambiar a Inglés",
+    "mode": "Modo",
+    "day" : "día",
+    "nigth" : "noche"
   },
   "welcome":{
     "text": "Soy apasionada del código y del desarrollo web enfocado en los usuarios. Desafíame y logremos el éxito de tu proyecto.",
     "button": "Ver Proyectos"
+  },
+  "portfolio": {
+    "title": "Qué he hecho?",
+    "planting": "Red social enfocada en el cuidado del medio ambiente. El objetivo principal de esta aplicación es que aquellas personas que tengan interés en temas medioambientales puedan conocer a más gente que comparta sus mismos intereses, y se puedan generar instancias para compartir información",
+    "see": "Ver Código",
+    "braveup": "Cree una nueva versión de la App con Angular 9 y NodeJS. Mejore la velocidad de carga y respuesta. Se investigo a los usuarios previos para contribuir con el equipo de diseño en mejoras para  la usabilidad de la App",
+    "hivesystem": "Desarrolle un sistema complejo de gran escala con Angular 8, trabaje con REST API, implementé preprocesador Sass y herramientas de testeo como Jazmin. ",
+    "Inclusive": "This app is an inclusive tourist guide for people with disabilities. We use our own database made on NodeJS with data provided by the government and the inclusive circuits association of Santiago. The application offers the guidance of a voice assistant for the blind and also the high contrast option for people with low vision.",
+    "finances": "We are developing a Web App that determinate the level of indebtedness of the user, then provides a personal plan to achieve your financial goals (like study or buy a house). We build an algorithm that allows to identify which users are in risk to fall into over indebtedness and we can help to avoid that. We can also guide the users that already are in that situation to keep forward and get out of their debts. We’re aiming to validate our idea with real users, getting to know their needs in detail and iterate our initiative in order to develop a full experience that adapts to what people really needs.",
+    "mini": "Pequeños desafíos de código",
+    "watch": "Ver Demo",
+    "piano": "Este es un pequeño piano construido con la Web Audio Api y Angular, puedes tocarlo y jugar con el."
+  },
+  "services":{
+    "title": "Qué puedo hacer por tí?",
+    "design": "Diseñar",
+    "designtxt": "Llevar a la vida el concepto del diseñador con HTML, CSS y JavaScript. Implementar diseños responsivos para dispositivos móviles. Fabricar prototipos de componentes UI para acelerar el proceso de diseño.",
+    "build": "Construir",
+    "buildtxt": "Crear herramientas que permitan al usuario ver e interactuar con tu sitio en cualquier navegador. Producir, modificar, mantener aplicaciones Web con enfoque en la experiencia de usuario. Escribir código de calidad, ordenado, limpio y reutilizable.",
+    "funcional" : "Programación Funcional",
+    "funcionaltxt": "Contribuir con la experiencia de Back-End, colaborando con APIs y generando bases de datos con información valiosa. Mantenimiento de software y control de versiones con Git, Utilizar programación funcional y reactiva con la tecnología más actual. Testeo de sitio durante el desarrollo para mejorar rendimiento y escalabilidad. "
+  },
+  "aboutme":{
+    "title": "Qué digo yo de mí?",
+    "p1": "Soy una persona muy apasionada por todo lo que hago. Mi motivación por aprender me mantiene en constante búsqueda de nuevos desafíos. Me gusta ponerme metas y trabajar hasta alcanzarlas, sin importar el tiempo que me tome. Soy consciente de que la única forma de avanzar es un paso a la vez. Desde niña estuve desarrollando mis talentos artísticos como el teatro y la pintura hasta que se volvió parte de mí. Estudie Animación Digital en DuocUC Viña del Mar donde pude aprender muchos conceptos de diseño y manejar programas de edición. Luego de eso me traslade a Santiago, donde ingrese a la universidad de las Américas a continuar mis estudios de Animación. Por todo esto desarrolle una capacidad de adaptarse a ritmos de trabajo intenso con fechas de entrega impostergables y la tolerancia a la critica. Actualmente practico la pintura digital y la ilustración tradicional. Me gusta fabricar cosas a mano como peluches y muñecas que vendo en mi tienda virtual o ferias de arte. Soy también una lectora empedernida y fan del cine. Me gusta la naturaleza, soy ecologista, vegetariana, amante de los gatos y de andar en bicicleta.",
+    "p2": "Soy una persona muy apasionada por todo lo que hago. Mi motivación por aprender me mantiene en constante búsqueda de nuevos desafíos. Me gusta ponerme metas y trabajar hasta alcanzarlas, sin importar el tiempo que me tome. Soy consciente de que la única forma de avanzar es un paso a la vez. ",
+    "more": "Ver más",
+    "p3": "Desde niña estuve desarrollando mis talentos artísticos como el teatro y la pintura hasta que se volvió parte de mí. Estudie Animación Digital en DuocUC Viña del Mar donde pude aprender muchos conceptos de diseño y manejar programas de edición. Luego de eso me traslade a Santiago, donde ingrese a la universidad de las Américas a continuar mis estudios de Animación. Por todo esto desarrolle una capacidad de adaptarse a ritmos de trabajo intenso con fechas de entrega impostergables y la tolerancia a la critica. Actualmente practico la pintura digital y la ilustración tradicional. Me gusta fabricar cosas a mano como peluches y muñecas que vendo en mi tienda virtual o ferias de arte. Soy también una lectora empedernida y fan del cine. Me gusta la naturaleza, soy ecologista, vegetariana, amante de los gatos y de andar en bicicleta."
+  },
+  "contact": {
+    "title": "-Es hora de crear algo increible-",
+    "contactme": "Contactame",
+    "contactotxt": "Puedes enviarme un email con tus consultas o si lo prefieres puedes llamarme o contactarte a mi +wsp, de cualquier manera contestare tu mensaje lo antes posible.",
+    "name": "Nombre",
+    "company": "Empresa",
+    "contact": "Contacto",
+    "msg": "Mensaje",
+    "cancel": "Cancelar",
+    "send": "Enviar"
   }
 }
