@@ -6,7 +6,7 @@
   margin-top: 6%;
   margin-right: 4%;
   margin-left: 4%;
-  height: 440px;
+  height: 480px;
   margin-bottom: 15%;
   position: relative;
   padding: 0;
@@ -71,9 +71,10 @@
 }
 
 .card p {
-  margin-top: 0.5rem;
-  
+  margin-top: 0.5rem;  
+  padding-top: 15px;
 }
+
 
 .card p.day{
   color: #172c66;
@@ -108,10 +109,19 @@ p {
   padding-top: 4.2rem;
 }
 
+.cardContainer{
+  display: flex;
+  padding-bottom: 60px;
+}
+
 @media only screen and (max-width: 768px) {
+  .cardContainer{
+    margin-bottom: 50px;
+  }
   .card {
-    margin-right: 0%;
-    margin-left: 0%;
+    margin-right: 8em;
+    margin-left: 8em;
     margin-bottom: 15%;
+    /* height: 480px; */
   }
 }

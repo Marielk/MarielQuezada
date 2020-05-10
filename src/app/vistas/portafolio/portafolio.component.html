@@ -1,52 +1,58 @@
 <p class="title top">Qué he hecho?</p>
 <div class="cards">
-  <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'"   data-aos="fade-down">
-    <div class="card-header bg1">
-      <img class="card-image" src="../../../assets/img/braveup.PNG" alt="Share" />
-    </div>
-    <div class="card-content">
-      <h2 class="card-title title">"BRAVEUP!"</h2>
-      <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'" [translate]="'portfolio.braveup'"></p>
-        
-        <div class="row">
-          <a style="color: white;" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" role="button" data-toggle="modal" data-target="#braveupModal" [translate]="'portfolio.watch'"></a>
-        </div>
-    </div>
-  </div>
-  <!-- card 2 -->
-  <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'"   data-aos="fade-down">
-    <div class="card-header bg1">
-      <img class="card-image" src="../../../assets/img/planting.png" alt="Share" />
-    </div>
-    <div class="card-content">
-      <h2 class="card-title title">"Planting Friends"</h2>
-      <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'" [translate]="'portfolio.planting'"></p>
-        
-        <div class="row">
-          <a [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'"  href="https://github.com/Marielk/planting-friends" role="button" target="_blank" [translate]="'portfolio.see'">
-          </a>
-          <a  [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" href="https://plantingfriends.firebaseapp.com/" role="button" target="_blank">
-            Demo
-          </a>
-        </div>
+  <div class="col-sm-12 col-md-12 col-lg-4">
+    <div [ngClass]="mode === 'nigth' ? 'card card-nigth' : 'card card-day'">
+      <div class="card-header bg1">
+        <img class="card-image" src="../../../assets/img/braveup.PNG" alt="Share" />
+      </div>
+      <div class="card-content">
+        <h2 class="card-title title">"BRAVEUP!"</h2>
+        <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'" [translate]="'portfolio.braveup'"></p>
+          
+          <div class="row">
+            <a style="color: white;" [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" role="button" data-toggle="modal" data-target="#braveupModal" [translate]="'portfolio.watch'"></a>
+          </div>
+      </div>
     </div>
   </div>
-  <!-- card 3 -->
-  <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'"   data-aos="fade-down">
-    <div class="card-header bg1">
-      <img class="card-image" src="../../../assets/img/piano.PNG" alt="Share" />
+  <div class="col-sm-12 col-md-12 col-lg-4">
+    <!-- card 2 -->
+    <div [ngClass]="mode === 'nigth' ? 'card card-nigth' : 'card card-day'" >
+      <div class="card-header bg1">
+        <img class="card-image" src="../../../assets/img/planting.png" alt="Share" />
+      </div>
+      <div class="card-content">
+        <h2 class="card-title title">"Planting Friends"</h2>
+        <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'" [translate]="'portfolio.planting'"></p>
+          
+          <div class="row">
+            <a [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'"  href="https://github.com/Marielk/planting-friends" role="button" target="_blank" [translate]="'portfolio.see'">
+            </a>
+            <a  [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" href="https://plantingfriends.firebaseapp.com/" role="button" target="_blank">
+              Demo
+            </a>
+          </div>
+      </div>
     </div>
-    <div class="card-content">
-      <h2 class="card-title title">"Kawaii Piano Keyboard"</h2>
-      <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'" [translate]="'portfolio.piano'"></p>
-        
-        <div class="row">
-          <a [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'"  href="https://github.com/Marielk/pianokeyboard" role="button" target="_blank" [translate]="'portfolio.see'">
-          </a>
-          <a  [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" href="https://marielk.github.io/pianokeyboard/" role="button" target="_blank">
-            Demo
-          </a>
-        </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-4">
+    <!-- card 3 -->
+    <div [ngClass]="mode === 'nigth' ? 'card card-nigth card-piano' : 'card card-day card-piano'" >
+      <div class="card-header bg1">
+        <img class="card-image piano-img" src="../../../assets/img/piano.PNG" alt="Share" />
+      </div>
+      <div class="card-content piano-content">
+        <h2 class="card-title title">"Kawaii Piano Keyboard"</h2>
+        <p [ngClass]="mode === 'nigth' ? 'card-text card-text-nigth' : 'card-text card-text-day'" [translate]="'portfolio.piano'"></p>
+          
+          <div class="row">
+            <a [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'"  href="https://github.com/Marielk/pianokeyboard" role="button" target="_blank" [translate]="'portfolio.see'">
+            </a>
+            <a  [ngClass]="mode === 'nigth' ? 'btn btn-primary btnLinks btn-primary-nigth' : 'btn btn-primary btnLinks btn-primary-day'" href="https://marielk.github.io/pianokeyboard/" role="button" target="_blank">
+              Demo
+            </a>
+          </div>
+      </div>
     </div>
   </div>
 </div>   

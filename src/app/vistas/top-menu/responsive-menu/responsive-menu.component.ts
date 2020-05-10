@@ -16,7 +16,7 @@ export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
   form: any = document.getElementsByName('form');
   input: any;
   buton: HTMLButtonElement;
-  mode = 'nigth';
+  mode = 'Noche';
   lang = '';
   modeColor = '';
   constructor( private translate: TranslateService, private store: Store<State>  ) {
@@ -24,6 +24,8 @@ export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
 
   ngOnInit() {
     this.translateDefault();
+    this.colorDefault();
+    this.translateMode();
     this.suscribeToMode();
   }
 
@@ -42,13 +44,14 @@ export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
         this.store.dispatch(action);
         Cookie.set('mode', 'day');
         // this.mode = 'día';
+        this.translateMode();
       } else {
         const action = new ChangeMode('nigth');
         Cookie.set('mode', 'nigth');
         this.store.dispatch(action);
         // this.mode = 'noche';
+        this.translateMode();
       }
-      this.translateMode();
     });
   }
 
@@ -79,6 +82,12 @@ export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
       this.translate.use('es');
       this.lang = 'es';
     }
+  }
+
+  colorDefault() {
+    const action = new ChangeMode('nigth');
+    Cookie.set('mode', 'nigth');
+    this.store.dispatch(action);
   }
 
   checkCookieLang() {
@@ -114,6 +123,7 @@ export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
       this.translate.use('en');
       this.lang = 'en';
     }
+    this.translateMode();
   }
 
 
@@ -138,18 +148,8 @@ export class ResponsiveMenuComponent implements OnInit, AfterViewChecked {
 
   suscribeToMode() {
     this.store.select('mode').subscribe((mode) => {
-      this.mode = mode;
+      // this.mode = mode;
       this.modeColor = mode;
-      if (mode === 'day') {
-        // this.mode = 'día';
-        const action = new ChangeMode('day');
-        this.store.dispatch(action);
-        // $('input[type="checkbox"]').attr('checked', 'checked');
-        const switchInput = document.getElementById('switchMovile') as HTMLInputElement;
-        switchInput.checked = true;
-        this.translateMode();
-        // switchInput.classList.add('checked');
-      } 
     });
   }
   

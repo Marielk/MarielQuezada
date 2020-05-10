@@ -1,39 +1,35 @@
 <div class="container-fluid">
   <div class="row pb-4">
-      <div class="col-sm-12">
-          <p class="title top" [translate]="'aboutme.title'"></p>
-        </div>
-    <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-8- col-lg-6' : 'card card-day col-sm-8- col-lg-6'">
-      <div class="card-body">
-        <p [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText full' : 'card-text card-text-day cardText full'" [translate]="'aboutme.p1'"></p>
-         
-          <div [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText responsive' : 'card-text card-text-day cardText responsive'" [translate]="'aboutme.p2'">
-            </div>
-            <a class="btn btn-primary responsive verMas" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" [translate]="'aboutme.more'">
-            </a>
-            <a [href]="lang === 'es' ? '../../../assets/docs/marielquezada_es_cv_2020.pdf': '../../../assets/docs/marielquezada_en_cv_2020.pdf'" [download]="lang === 'es' ? 'marielquezada_es_cv_2020.pdf': 'marielquezada_en_cv_2020.pdf'" target="_blank" class="btn btn-primary btn-lg responsive cvR"><i class="fas fa-download"></i> CV</a> 
-            <div class="collapse" id="collapseExample">
-                <div class="card innerResponsive" [translate]="'aboutme.p3'"> 
-                </div>
-                  
-            </div>
-        <hr>
-        <div class="card-footer">
-          <span> 
-            <a href="https://www.instagram.com/lavandacode/?hl=es-la" target="_blank">
-              <i [ngClass]="mode === 'nigth' ? 'fab fa-instagram footerIcon footerIcon-nigth' : 'fab fa-instagram footerIcon footerIcon-day'"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mariel-quezada-gallardo" target="_blank">
-              <i [ngClass]="mode === 'nigth' ? 'fab fa-linkedin footerIcon footerIcon-nigth' : 'fab fa-linkedin footerIcon footerIcon-day'"></i>
-            </a>
-            <a href="https://www.behance.net/marielkmya01db" target="_blank">
-              <i [ngClass]="mode === 'nigth' ? 'fab fa-behance-square footerIcon footerIcon-nigth' : 'fab fa-behance-square footerIcon footerIcon-day'"></i>
-            </a>
-          </span>
+    <div class="col-sm-12">
+      <p class="title top" [translate]="'aboutme.title'"></p>
+    </div>
+    <div class="col-sm-8- col-lg-6">
+      <div [ngClass]="mode === 'nigth' ? 'card card-nigth' : 'card card-day'">
+        <div class="card-body">
+          <p [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText full' : 'card-text card-text-day cardText full'" [translate]="'aboutme.p1'"></p>
+           
+            <div [ngClass]="mode === 'nigth' ? 'card-text cardText-nigth cardText responsive' : 'card-text card-text-day cardText responsive'" [translate]="'aboutme.p2'">
+              </div>
+              <a [href]="lang === 'es' ? '../../../assets/docs/marielquezada_es_cv_2020.pdf': '../../../assets/docs/marielquezada_en_cv_2020.pdf'" [download]="lang === 'es' ? 'marielquezada_es_cv_2020.pdf': 'marielquezada_en_cv_2020.pdf'" target="_blank" class="btn btn-primary btn-lg responsive cvR"><i class="fas fa-download"></i> CV</a> 
+              
+          <hr>
+          <div class="card-footer">
+            <span> 
+              <a href="https://www.instagram.com/lavandacode/?hl=es-la" target="_blank">
+                <i [ngClass]="mode === 'nigth' ? 'fab fa-instagram footerIcon footerIcon-nigth' : 'fab fa-instagram footerIcon footerIcon-day'"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mariel-quezada-gallardo" target="_blank">
+                <i [ngClass]="mode === 'nigth' ? 'fab fa-linkedin footerIcon footerIcon-nigth' : 'fab fa-linkedin footerIcon footerIcon-day'"></i>
+              </a>
+              <a href="https://www.behance.net/marielk_gallardo" target="_blank">
+                <i [ngClass]="mode === 'nigth' ? 'fab fa-behance-square footerIcon footerIcon-nigth' : 'fab fa-behance-square footerIcon footerIcon-day'"></i>
+              </a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-sm-12 col-lg-6">
+    <div class="col-sm-12 col-lg-6 img-container">
       <img src="../../../assets/img/foto_perfil.JPG" alt="imagen de perfil" class="profileIMG">
       <a [href]="lang === 'es' ? '../../../assets/docs/marielquezada_es_cv_2020.pdf': '../../../assets/docs/marielquezada_en_cv_2020.pdf'" [download]="lang === 'es' ? 'marielquezada_es_cv_2020.pdf': 'marielquezada_en_cv_2020.pdf'" target="_blank"
       [ngClass]="mode === 'nigth' ? 'btn btn-primary btn-lg full cvN cvN-nigth' : 'btn btn-primary btn-lg full cvN cvN-day'">

@@ -1,31 +1,39 @@
 <p class="title top" [translate]="'services.title'"></p>
-<div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'">
-    <div [ngClass]="mode === 'nigth' ? 'card__image card__image-nigth' : 'card__image card__image-day'">
-      <img class="icon" src="../../../assets/img/program.png">
+<div class="cardContainer">
+  <div class="col-sm-12 col-md-12 col-lg-4">
+    <div [ngClass]="mode === 'nigth' ? 'card card-nigth' : 'card card-day'">
+        <div [ngClass]="mode === 'nigth' ? 'card__image card__image-nigth' : 'card__image card__image-day'">
+          <img class="icon" src="../../../assets/img/program.png">
+        </div>
+        <div class="card__content">
+          <h3 [ngClass]="mode === 'nigth' ? 'subtitle nigth' : 'subtitle day'" [translate]="'services.design'"></h3>
+          <p [ngClass]="mode === 'nigth' ? 'text nigth' : 'text day'" [translate]="'services.designtxt'"> 
+            </p>
+          </div>
     </div>
-    <div class="card__content">
-      <h3 [ngClass]="mode === 'nigth' ? 'subtitle nigth' : 'subtitle day'" [translate]="'services.design'"></h3>
-      <p [ngClass]="mode === 'nigth' ? 'text nigth' : 'text day'" [translate]="'services.designtxt'"> 
-        </p>
-      </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-4">
+    <div [ngClass]="mode === 'nigth' ? 'card card-nigth' : 'card card-day'">
+          <div [ngClass]="mode === 'nigth' ? 'card__image card__image-nigth' : 'card__image card__image-day'">
+            <img class="icon" src="../../../assets/img/moviletools.png">
+          </div>
+          <div class="card__content">
+            <h3 [ngClass]="mode === 'nigth' ? 'subtitle nigth' : 'subtitle day'" [translate]="'services.build'"></h3>
+            <p [ngClass]="mode === 'nigth' ? 'text nigth' : 'text day'" [translate]="'services.buildtxt'"></p>
+        </div>
     </div>
-    
-    <div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'">
-      <div [ngClass]="mode === 'nigth' ? 'card__image card__image-nigth' : 'card__image card__image-day'">
-        <img class="icon" src="../../../assets/img/moviletools.png">
-      </div>
-      <div class="card__content">
-        <h3 [ngClass]="mode === 'nigth' ? 'subtitle nigth' : 'subtitle day'" [translate]="'services.build'"></h3>
-        <p [ngClass]="mode === 'nigth' ? 'text nigth' : 'text day'" [translate]="'services.buildtxt'"></p>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-4">
+    <div [ngClass]="mode === 'nigth' ? 'card card-nigth' : 'card card-day'">
+        <div [ngClass]="mode === 'nigth' ? 'card__image card__image-nigth' : 'card__image card__image-day'">
+          <img class="icon" src="../../../assets/img/work.png">
+        </div>
+        <div class="card__content">
+          <h3 [ngClass]="mode === 'nigth' ? 'subtitle nigth' : 'subtitle day'" [translate]="'services.funcional'"></h3>
+          <p [ngClass]="mode === 'nigth' ? 'text nigth' : 'text day'" [translate]="'services.funcionaltxt'"></p>
+        </div>
     </div>
-</div>
-
-<div [ngClass]="mode === 'nigth' ? 'card card-nigth col-sm-12 col-lg-3' : 'card card-day col-sm-12 col-lg-3'">
-    <div [ngClass]="mode === 'nigth' ? 'card__image card__image-nigth' : 'card__image card__image-day'">
-      <img class="icon" src="../../../assets/img/work.png">
-    </div>
-    <div class="card__content">
-      <h3 [ngClass]="mode === 'nigth' ? 'subtitle nigth' : 'subtitle day'" [translate]="'services.funcional'"></h3>
-      <p [ngClass]="mode === 'nigth' ? 'text nigth' : 'text day'" [translate]="'services.funcionaltxt'"></p>
-    </div>
+  </div>
+      
+  
 </div>

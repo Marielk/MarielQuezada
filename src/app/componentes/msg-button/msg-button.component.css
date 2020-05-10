@@ -136,3 +136,9 @@
 .modal-body-nigth{
   background-color: black;
 }
+
+@media only screen and (max-width: 768px) {
+  #floating-button{
+    right: 15px;
+  }
+}

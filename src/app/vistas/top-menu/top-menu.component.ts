@@ -12,13 +12,15 @@ import { ChangeMode } from 'src/app/state_management/reducers/mode.actions';
   styleUrls: ['./top-menu.component.css']
 })
 export class TopMenuComponent implements OnInit, AfterViewChecked {
-  mode = 'noche';
+  mode = 'Noche';
   modeColor = '';
   lang = '';
   constructor( private translate: TranslateService, private store: Store<State> ) { }
 
   ngOnInit() {
     this.translateDefault();
+    this.colorDefault();
+    this.translateMode();
     this.suscribeToMode();
   }
 
@@ -38,7 +40,6 @@ export class TopMenuComponent implements OnInit, AfterViewChecked {
       this.translate.use('es');
       this.lang = 'es';
     }
-    this.translateMode()
   }
 
   checkCookieLang() {
@@ -77,6 +78,12 @@ export class TopMenuComponent implements OnInit, AfterViewChecked {
     this.translateMode()
   }
 
+  colorDefault() {
+    const action = new ChangeMode('nigth');
+    Cookie.set('mode', 'nigth');
+    this.store.dispatch(action);
+  }
+
   activeSwitch() {
     // debugger
     const switchInput = document.getElementById('switch') as HTMLInputElement;
@@ -87,13 +94,14 @@ export class TopMenuComponent implements OnInit, AfterViewChecked {
         this.store.dispatch(action);
         Cookie.set('mode', 'day');
         // this.mode = 'día';
+        this.translateMode();
       } else {
         const action = new ChangeMode('nigth');
         Cookie.set('mode', 'nigth');
         this.store.dispatch(action);
         // this.mode = 'noche';
+        this.translateMode();
       }
-      this.translateMode();
     });
   }
 
@@ -116,16 +124,16 @@ export class TopMenuComponent implements OnInit, AfterViewChecked {
     this.store.select('mode').subscribe((mode) => {
       this.modeColor = mode;
       // console.log(this.modeColor)
-      if (mode === 'day') {
-        // this.mode = 'día';
-        const action = new ChangeMode('day');
-        this.store.dispatch(action);
-        // $('input[type="checkbox"]').attr('checked', 'checked');
-        const switchInput = document.getElementById('switch') as HTMLInputElement;
-        switchInput.checked = true;
-        this.translateMode();
-        // switchInput.classList.add('checked');
-      } 
+      // if (mode === 'day') {
+      //   // this.mode = 'día';
+      //   const action = new ChangeMode('day');
+      //   this.store.dispatch(action);
+      //   // $('input[type="checkbox"]').attr('checked', 'checked');
+      //   const switchInput = document.getElementById('switch') as HTMLInputElement;
+      //   switchInput.checked = true;
+      //   this.translateMode();
+      //   // switchInput.classList.add('checked');
+      // } 
       // else {
       //   $('input[type="checkbox"]').removeAttr('checked');
       // }

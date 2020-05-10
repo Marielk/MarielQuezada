@@ -14,7 +14,7 @@
 .card {
 	position: relative;
   border-radius: 10px;
-  width: 160px;
+  /* width: 160px; */
   height: 500px;
   padding-left: 10%;
   padding-right: 6%;
@@ -163,17 +163,59 @@
   /* margin-left: 5%; */
 }
 
+@media only screen and (max-width: 460px) {
+  .card{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    height: 30em;
+  }
+  .card-header{
+    height: 45% !important;
+  }
+
+  .card-image{
+    height: 95% !important;
+  }
+
+  .card-content{
+    top: 43% !important;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   
   .card{
-    width: 365px;
-    height: 50em;
-    margin-left: 0%;
-    margin-right: 0%;
+    /* width: 365px; */
+    height: 40em;
+    margin-left: 8em;
+    margin-right: 8em;
     text-align: left;
     margin-top: 4%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
   }
+  .card-piano{
+    height: 28em;
+  }
+  .piano-img{
+    height: 100%;
+  }
+
+  .piano-content{
+    top: 50%;
+  }
+  .card-header{
+    height: 45%;
+  }
+
+  .card-image{
+    height: 150%;
+    width: 100%;
+  }
+
+  .card-content{
+    top: 65%;
+  }
+
   .btnLinks{
     margin-left: 18%;
     font-size: medium;
