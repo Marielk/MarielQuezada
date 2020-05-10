@@ -86,6 +86,11 @@
   [class*="col-"] {
       width: 100%;
   }
+
+  .main{
+    padding-left: 10px;
+    padding-right: 110px;
+  }
   
   .title{
     

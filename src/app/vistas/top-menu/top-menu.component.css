@@ -165,7 +165,7 @@ input:checked + .slider:before {
     display: none;
   }
   .responsiveMenu{
-    display: inline-block;
+    display: inline-block !important;
   }
   
 }
@@ -173,6 +173,9 @@ input:checked + .slider:before {
 @media only screen and (max-width: 1024px) {
   .buttonMenu{
     padding-left: 0px;
+  }
+  .responsiveMenu{
+    display: inline-block;
   }
   
 }

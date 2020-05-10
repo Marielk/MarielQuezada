@@ -35,6 +35,8 @@
         <button id="btn6" [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" disabled (click)="validate()">
           <a routerLink="contact" [translate]="'top_menu.contact'"></a>
         </button>
+      </li>
+      <li>
         <button id="btn7" [ngClass]="modeColor === 'nigth' ? 'btnMenu btnMenu-nigth' : 'btnMenu btnMenu-day'" [translate]="'top_menu.language'" (click)="changeLanguage()"></button>
         <img class="flag_img" [src]="lang === 'es' ? '../../../../assets/img/english-language.png' : '../../../../assets/img/spanish-language.png' ">
       </li>
