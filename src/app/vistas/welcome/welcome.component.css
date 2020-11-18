@@ -1,31 +1,19 @@
 
   .main{
-    /* background-color: #242629; */
-    /* height: 1000px; */
     display: list-item;
-    /* color: #ffffff; */
-    /* height: 617px; */
   }
 
   .imgMain{
-    /* height: 70%;
-    margin-top: 5%; */
     height: 36%;
-    /* margin-left: 50%;
-    margin-right: 15%; */
     margin-top: 5%;
-    /* width: 155%; */
-
   }
   .title{
-    
     margin-top: 8%;
     margin-left: 5%;
     font-size: -webkit-xxx-large;
     font-family: 'PT Serif', serif;
   }
   .subtitle{
-
     margin-top: -2%;
       margin-left: 35%;
     font-size: larger;
@@ -50,7 +38,7 @@
     }
     .imgMain{
       height: 26%;
-      
+
     }
     .text{
       width: 100%;
@@ -66,7 +54,7 @@
   @media only screen and (min-width: 375px) {
     .imgMain{
       height: 31%;
-     
+
     }
     .title{
       margin-left: 0%;
@@ -75,7 +63,7 @@
   @media only screen and (min-width: 425px) {
     .imgMain{
       height: 36%;
-      
+
     }
     .title{
       margin-left: 4%;
@@ -91,32 +79,26 @@
     padding-left: 10px;
     padding-right: 110px;
   }
-  
+
   .title{
-    
+
     margin-top: 8%;
     margin-left: 5%;
     font-size: x-large;
     text-align: center;
     font-family: 'PT Serif', serif;
-    /* transform: translateY(550px); */
   }
   .subtitle{
-
     margin-top: -2%;
-      /* margin-left: 30%;
-    font-size: larger; */
     margin-left: 20%;
     font-size: medium;
     font-family: 'ABeeZee', sans-serif;
-    /* transform: translateY(560px); */
   }
   .text{
     margin-top: 5%;
     width: 95%;
     margin-left: 5%;
     font-family: 'ABeeZee', sans-serif;
-    /* transform: translateY(580px); */
   }
 }
 
@@ -127,18 +109,17 @@
      margin-left: 0%;
      margin-right: 0%;
     }
-  
+
 
   .imgContainer{
     margin-left: 8%;
   }
   .title{
-    
     margin-top: 8%;
     margin-left: -13%;
     font-size: xx-large;
     font-family: 'PT Serif', serif;
- 
+
   }
   .subtitle{
 
@@ -146,17 +127,16 @@
     margin-left: 7%;
     font-size: medium;
     font-family: 'ABeeZee', sans-serif;
-    
+
   }
   .text{
     margin-top: 0%;
-    /* width: 70%; */
     text-align: justify;
     margin-left: 5%;
     padding: 2%;
     padding-right: 10%;
     font-family: 'ABeeZee', sans-serif;
-    
+
   }
 }
 
@@ -164,7 +144,7 @@
 
   .imgMain{
     height: 40%;
-    float: right; 
+    float: right;
     margin-right: 5%;
   }
 
@@ -177,7 +157,6 @@
   }
 
   .title{
-    margin-left: -10%;
     font-size: -webkit-xxx-large;
   }
 }
@@ -188,7 +167,6 @@
   }
 
   .title{
-    margin-left: -2%;
     font-size: 5em;
   }
 
@@ -208,7 +186,6 @@
   }
 
   .title{
-    margin-left: -2%;
     font-size: 6em;
   }
 

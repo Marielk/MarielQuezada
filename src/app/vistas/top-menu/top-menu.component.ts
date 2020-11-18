@@ -11,7 +11,7 @@ import { ChangeMode } from 'src/app/state_management/reducers/mode.actions';
   templateUrl: './top-menu.component.html',
   styleUrls: ['./top-menu.component.css']
 })
-export class TopMenuComponent implements OnInit, AfterViewChecked {
+export class TopMenuComponent implements OnInit{
   mode = 'Noche';
   modeColor = '';
   lang = '';
@@ -22,10 +22,6 @@ export class TopMenuComponent implements OnInit, AfterViewChecked {
     this.colorDefault();
     this.translateMode();
     this.suscribeToMode();
-  }
-
-  ngAfterViewChecked() {
-    this.activeSwitch();
   }
 
   translateDefault() {
@@ -84,59 +80,47 @@ export class TopMenuComponent implements OnInit, AfterViewChecked {
     this.store.dispatch(action);
   }
 
-  activeSwitch() {
-    // debugger
-    const switchInput = document.getElementById('switch') as HTMLInputElement;
-    switchInput.addEventListener('click', () => {
-      const checked = switchInput.checked;
+  switchColor(e) {
+    const checked = e.toElement.checked;
       if (checked === true) {
         const action = new ChangeMode('day');
         this.store.dispatch(action);
         Cookie.set('mode', 'day');
-        // this.mode = 'día';
-        this.translateMode();
       } else {
         const action = new ChangeMode('nigth');
         Cookie.set('mode', 'nigth');
         this.store.dispatch(action);
-        // this.mode = 'noche';
-        this.translateMode();
       }
-    });
+      this.translateMode();
   }
 
   translateMode() {
     const mode = Cookie.get('mode');
     const lang = Cookie.get('lang');
-    if (mode === 'day' && lang === 'es') {
-      this.mode = 'Día';
-    } else if (mode === 'nigth' && lang === 'es') {
-      this.mode = 'Noche';
-    } else if (mode === 'day' && lang === 'en') {
-      this.mode = 'Day';
-    } else if (mode === 'nigth' && lang === 'en') {
-      this.mode = 'Nigth';
+    if(lang) {
+      if (mode === 'day' && lang === 'es') {
+        this.mode = 'Día';
+      } else if (mode === 'nigth' && lang === 'es') {
+        this.mode = 'Noche';
+      } else if (mode === 'day' && lang === 'en') {
+        this.mode = 'Day';
+      } else if (mode === 'nigth' && lang === 'en') {
+        this.mode = 'Nigth';
+      }
+    } else {
+      if (mode === 'day') {
+        this.mode = 'Día';
+      } else {
+        this.mode = 'Noche';
+      }
     }
-    // console.log(mode, lang, this.mode);
+
+    console.log(mode, lang, this.mode);
   }
 
   suscribeToMode() {
     this.store.select('mode').subscribe((mode) => {
       this.modeColor = mode;
-      // console.log(this.modeColor)
-      // if (mode === 'day') {
-      //   // this.mode = 'día';
-      //   const action = new ChangeMode('day');
-      //   this.store.dispatch(action);
-      //   // $('input[type="checkbox"]').attr('checked', 'checked');
-      //   const switchInput = document.getElementById('switch') as HTMLInputElement;
-      //   switchInput.checked = true;
-      //   this.translateMode();
-      //   // switchInput.classList.add('checked');
-      // } 
-      // else {
-      //   $('input[type="checkbox"]').removeAttr('checked');
-      // }
     });
   }
 }
